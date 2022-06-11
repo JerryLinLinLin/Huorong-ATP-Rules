@@ -1,0 +1,815 @@
+﻿{
+  "ver": "5.0",
+  "tag": "hipsuser",
+  "data": [
+    {
+      "id": 256,
+      "power": 1,
+      "name": "[结束]木马行为防护.A.00",
+      "procname": "*",
+      "treatment": 1,
+      "_commnet": "Test",
+      "policies": [
+        {
+          
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\>\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\ProgramData\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Program Files\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Program Files (x86)\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\Local\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\>\\Documents\\>"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\>\\Documents\\>\\>"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\Public\\>.bat"
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "power": 1,
+      "name": "[结束]木马行为防护.A.01",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Recycler\\*"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\$RECYCLE.BIN\\*"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\System Volume Information\\*"
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "power": 0,
+      "name": "[结束]木马行为防护.A.02",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\ProgramData\\>\\>.exe"
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "power": 1,
+      "name": "[结束]木马行为防护.B.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.js"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.vb?"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "power": 1,
+      "name": "[结束]木马行为防护.B.01",
+      "procname": "*\\Windows\\*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*"
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "power": 1,
+      "name": "[结束]木马行为防护.C.00",
+      "procname": "*\\Users\\*\\AppData\\>\\>\\>",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*"
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "power": 0,
+      "name": "[结束]木马行为防护.C.01",
+      "procname": "*\\Users\\*\\AppData\\>\\>\\>",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 266,
+      "power": 1,
+      "name": "[结束]木马行为防护.D.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\ProgramData\\*Cookie*.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*Cookie*txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Local\\>\\>\\>Cookie>txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Local\\>\\>screen*png"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*cookie*txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*passowrd*txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 266,
+      "power": 1,
+      "name": "[结束]木马行为防护.D.01",
+      "procname": "*\\Windows\\Microsoft.NET\\Framework\\>\\>",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.ini"
+        },
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*"
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "power": 1,
+      "name": "[结束]木马行为防护.D.02",
+      "procname": "*\\Windows\\>",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.ini"
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "power": 1,
+      "name": "[结束]木马行为防护.E.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 4,
+          "res_path": "HKEY_CLASSES_ROOT\\mscfile\\shell\\open\\command\\*"
+        },
+        {
+          "montype": 2,
+          "action_type": 4,
+          "res_path": "HKEY_CURRENT_USER\\Software\\Classes\\mscfile\\shell\\open\\command\\*"
+        },
+        {
+          "montype": 2,
+          "action_type": 4,
+          "res_path": "HKEY_LOCAL_MACHINE\\Software\\Classes\\mscfile\\shell\\open\\command\\*"
+        },
+        {
+          "montype": 2,
+          "action_type": 4,
+          "res_path": "HKEY_CURRENT_USER\\Software\\Classes\\exefile\\shell\\runas\\command\\*"
+        },
+        {
+          "montype": 2,
+          "action_type": 4,
+          "res_path": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\control.exe"
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "power": 1,
+      "name": "[结束]木马行为防护.F.00",
+      "procname": "*\\Windows\\Sys?????\\>",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.exe"
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "power": 0,
+      "name": "[结束]木马行为防护.F.01",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.exe"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.A.00",
+      "procname": "*\\EXCEL.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.scr"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.B.00",
+      "procname": "*\\EXCEL.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.A.01",
+      "procname": "*\\POWERPNT.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.scr"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.B.01",
+      "procname": "*\\POWERPNT.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.A.02",
+      "procname": "*\\WINWORD.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.scr"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.B.02",
+      "procname": "*\\WINWORD.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.A.03",
+      "procname": "*\\EQNEDT32.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 5,
+          "res_path": "*.scr"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "power": 1,
+      "name": "[阻止]漏洞攻击防护.B.03",
+      "procname": "*\\EQNEDT32.EXE",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 5,
+          "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "power": 1,
+      "name": "[结束]勒索行为防护.A.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.docx.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.xlsx.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.pptx.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.doc.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.xls.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.ppt.>"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "power": 1,
+      "name": "[结束]勒索行为防护.A.01",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\>\\Pictures\\*.jpg.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\>\\Pictures\\*.png.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\>\\Desktop\\*.jpg.>"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\>\\Desktop\\*.png.>"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "power": 1,
+      "name": "[结束]勒索行为防护.B.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\ProgramData\\>.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Program Files (x86)\\>.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\*\\AppData\\Roaming\\>.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\*\\AppData\\Local\\>.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Users\\*\\AppData\\>.txt"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": ">\\Program Files\\>.txt"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "power": 1,
+      "name": "[结束]系统进程防护.A.00",
+      "procname": "*\\cmd.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\?script.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.vb?"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.js"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "power": 0,
+      "name": "[结束]系统进程防护.B.00",
+      "procname": "*\\Windows\\Sys?????\\*.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\powershell.exe"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "power": 1,
+      "name": "[结束]系统进程防护.B.01",
+      "procname": "*\\powershell.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 2,
+          "action_type": 1,
+          "res_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\*"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\*"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "power": 1,
+      "name": "[结束]系统进程防护.C.00",
+      "procname": "*\\?script.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.dll"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\*"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "power": 1,
+      "name": "[结束]系统进程防护.C.01",
+      "procname": "*\\mshta.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Windows\\Sys?????\\*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.dll"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\Users\\*\\AppData\\*"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "power": 1,
+      "name": "[结束]系统进程防护.C.02",
+      "procname": "*\\cmstp.exe",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.exe"
+        },
+        {
+          "montype": 1,
+          "action_type": 1,
+          "res_path": "*.dll"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "power": 0,
+      "name": "[结束]系统进程防护.D.00",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\svchost.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\lsass.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\services.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\winlogon.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\csrss.exe"
+        },
+        {
+          "montype": 0,
+          "action_type": 16,
+          "res_path": "*\\smss.exe"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "power": 1,
+      "name": "[阻止]隐私窃取防护.A.00",
+      "procname": "*\\Tencent\\*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "power": 0,
+      "name": "[阻止]隐私窃取防护.A.10",
+      "procname": "*",
+      "treatment": 1,
+      "policies": [
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*"
+        },
+        {
+          "montype": 1,
+          "action_type": 2,
+          "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*"
+        }
+      ]
+    }
+  ]
+}

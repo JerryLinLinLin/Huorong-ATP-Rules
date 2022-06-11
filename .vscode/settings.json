@@ -1,0 +1,16 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/Main.json"
+            ],
+            "url": "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/rule_schema.json"
+        },
+        {
+            "fileMatch": [
+                "/Auto.json"
+            ],
+            "url": "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/auto_schema.json"
+        }
+    ]
+}
