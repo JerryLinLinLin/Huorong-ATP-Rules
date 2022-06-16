@@ -1,0 +1,42 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*\\powershell.exe": [
+            {
+                "res_path": "*\\powershell.exe",
+                "montype": 0,
+                "action_type": 16,
+                "treatment": 0
+            },
+            {
+                "res_path": "*Lenovo*",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+            },
+            {
+                "res_path": "*\\Windows\\TEMP\\>\\DismHost.exe",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+            }
+        ],
+        "*\\Windows\\*": [
+            {
+                "res_path": "*\\Windows\\Sys?????\\*.exe",
+                "montype": 1,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ],
+        "*\\Windows\\Sys?????\\svchost.exe": [
+            {
+                "res_path": "*\\powershell.exe",
+                "montype": 0,
+                "action_type": 16,
+                "treatment": 0
+            }
+        ]
+    }
+}

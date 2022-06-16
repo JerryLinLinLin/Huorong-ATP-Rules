@@ -1,0 +1,54 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 266,
+            "power": 1,
+            "name": "Trojan.NetStealer.A",
+            "procname": "*\\Windows\\Microsoft.NET\\Framework\\>\\>",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.txt"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.ini"
+                },
+                {
+                    "montype": 2,
+                    "action_type": 5,
+                    "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 2,
+                    "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 2,
+                    "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*"
+                }
+            ]
+        },
+        {
+            "id": 267,
+            "power": 1,
+            "name": "Trojan.NetStealer.B",
+            "procname": "*\\Windows\\>",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.ini"
+                }
+            ]
+        }
+    ]
+}

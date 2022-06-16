@@ -1,0 +1,50 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 266,
+            "power": 1,
+            "name": "Trojan.Spy.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\ProgramData\\*Cookie*.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*Cookie*txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\Users\\*\\AppData\\Local\\>\\>\\>Cookie>txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\Users\\*\\AppData\\Local\\>\\>screen*png"
+              },
+              {
+                "montype": 1,
+                "action_type": 2,
+                "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*cookie*txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 2,
+                "res_path": "*\\Users\\*\\AppData\\Local\\Temp\\*passowrd*txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\>\\>.jpeg"
+              }
+            ]
+          }
+    ]
+}

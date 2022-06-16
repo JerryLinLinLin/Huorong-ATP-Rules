@@ -1,0 +1,30 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*\\Windows\\*": [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ],
+        ">\\Windows\\system32\\DrvInst.exe": [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ],
+        "*\\Windows\\Sys?????\\csrss.exe": [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ]
+    }
+}

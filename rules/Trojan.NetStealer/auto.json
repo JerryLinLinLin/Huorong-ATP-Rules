@@ -1,0 +1,14 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*\\Windows\\Microsoft.NET\\Framework\\>\\>": [
+            {
+              "res_path": "*\\AppData\\Local\\Microsoft\\*.txt",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            }
+          ]
+    }
+}

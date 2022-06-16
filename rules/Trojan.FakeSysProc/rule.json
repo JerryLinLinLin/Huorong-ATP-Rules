@@ -1,0 +1,45 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 14,
+            "power": 0,
+            "name": "Trojan.FakeSysProc.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\svchost.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\lsass.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\services.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\winlogon.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\csrss.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\smss.exe"
+              }
+            ]
+          }
+    ]
+}

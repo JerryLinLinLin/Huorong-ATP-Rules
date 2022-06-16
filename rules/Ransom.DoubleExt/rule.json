@@ -1,0 +1,74 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 294,
+            "power": 1,
+            "name": "Ransom.DoubleExt.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.docx.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.xlsx.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.pptx.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.doc.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.xls.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.ppt.>"
+                }
+            ]
+        },
+        {
+            "id": 294,
+            "power": 1,
+            "name": "Ransom.DoubleExt.B",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": ">\\Users\\>\\Pictures\\*.jpg.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": ">\\Users\\>\\Pictures\\*.png.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": ">\\Users\\>\\Desktop\\*.jpg.>"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": ">\\Users\\>\\Desktop\\*.png.>"
+                }
+            ]
+        }
+    ]
+}

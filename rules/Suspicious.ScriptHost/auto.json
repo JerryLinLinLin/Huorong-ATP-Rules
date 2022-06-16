@@ -1,0 +1,14 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        ">\\Windows\\TEMP\\*Intel>": [
+            {
+              "res_path": "*\\Windows\\Sys?????\\?script.exe",
+              "montype": 0,
+              "action_type": 16,
+              "treatment": 0
+            }
+          ]
+    }
+}

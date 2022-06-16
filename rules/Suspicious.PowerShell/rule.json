@@ -1,0 +1,44 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 240,
+            "power": 0,
+            "name": "Suspicious.PowerShell.A",
+            "procname": "*\\Windows\\Sys?????\\*.exe",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\powershell.exe"
+              }
+            ]
+          },
+          {
+            "id": 240,
+            "power": 1,
+            "name": "Suspicious.PowerShell.B",
+            "procname": "*\\powershell.exe",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 2,
+                "action_type": 1,
+                "res_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\*"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*.exe"
+              },
+              {
+                "montype": 0,
+                "action_type": 16,
+                "res_path": "*\\Users\\*\\AppData\\*"
+              }
+            ]
+          }
+    ]
+}

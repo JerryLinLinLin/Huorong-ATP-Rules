@@ -1,0 +1,140 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*": [
+            {
+              "res_path": "*.>.lnk",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.tmp",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.crdownload",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.xltd",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.xltd.cfg",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.~tmp",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.zip",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.rar",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.7z",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.baiduyun>",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.~tmp:Zone.Identifier",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*.>.downloading",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": "*\\Windows\\*.>.*",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+              "res_path": ">\\Program Files*.>.*",
+              "montype": 1,
+              "action_type": 1,
+              "treatment": 0
+            },
+            {
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Office\\Recent\\*.>.*",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+              },
+              {
+                "res_path": ">\\ProgramData\\*.>.*",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+              },
+              {
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\kingsoft\\*.>.*",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+              },
+              {
+                "res_path": "*\\Users\\*\\AppData\\Local\\kingsoft\\*.>.*",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+              }
+        ],
+        ">\\Program Files*.exe": [
+          {
+            "res_path": "*.>.*",
+            "montype": 1,
+            "action_type": 1,
+            "treatment": 0
+          }
+        ],
+        "*\\Windows\\explorer.exe": [
+          {
+            "res_path": "*.>.*",
+            "montype": 1,
+            "action_type": 1,
+            "treatment": 0
+          }
+        ],
+        ">\\Windows\\winsxs\\*": [
+          {
+            "res_path": "*.>.*",
+            "montype": 1,
+            "action_type": 1,
+            "treatment": 0
+          }
+        ]
+    }
+}

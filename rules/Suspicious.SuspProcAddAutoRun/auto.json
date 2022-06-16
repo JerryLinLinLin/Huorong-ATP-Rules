@@ -1,0 +1,14 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*\\Users\\*\\AppData\\>\\>\\>": [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 264,
+            "power": 1,
+            "name": "Suspicious.SuspProcAddAutoRun.A",
+            "procname": "*\\Users\\*\\AppData\\>\\>\\>",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 2,
+                "action_type": 5,
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*"
+              }
+            ]
+          }
+    ]
+}

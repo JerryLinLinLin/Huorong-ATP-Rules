@@ -2,13 +2,13 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "/Main.json"
+                "rules/*/rule.json"
             ],
             "url": "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/rule_schema.json"
         },
         {
             "fileMatch": [
-                "/Auto.json"
+                "rules/*/auto.json"
             ],
             "url": "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/auto_schema.json"
         }

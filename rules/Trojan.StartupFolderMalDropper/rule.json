@@ -1,0 +1,30 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 256,
+            "power": 1,
+            "name": "Trojan.StartupFolderMalDropper.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 1,
+                "action_type": 5,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.js"
+              },
+              {
+                "montype": 1,
+                "action_type": 5,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.vb?"
+              },
+              {
+                "montype": 1,
+                "action_type": 5,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\*.exe"
+              }
+            ]
+          }
+    ]
+}

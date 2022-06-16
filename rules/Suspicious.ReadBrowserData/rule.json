@@ -1,0 +1,25 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 294,
+            "power": 0,
+            "name": "Suspicious.ReadBrowserData",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 1,
+                "action_type": 2,
+                "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*"
+              },
+              {
+                "montype": 1,
+                "action_type": 2,
+                "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*"
+              }
+            ]
+          }
+    ]
+}

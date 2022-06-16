@@ -1,0 +1,45 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 294,
+            "power": 1,
+            "name": "Ransom.CreateRansomNote.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\ProgramData\\>.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\Program Files (x86)\\>.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\Users\\*\\AppData\\Roaming\\>.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\Users\\*\\AppData\\Local\\>.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\Users\\*\\AppData\\>.txt"
+              },
+              {
+                "montype": 1,
+                "action_type": 1,
+                "res_path": ">\\Program Files\\>.txt"
+              }
+            ]
+          }
+    ]
+}

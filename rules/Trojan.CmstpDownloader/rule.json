@@ -1,0 +1,25 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 26,
+            "power": 1,
+            "name": "Trojan.CmstpDownloader.A",
+            "procname": "*\\cmstp.exe",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.exe"
+                },
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.dll"
+                }
+            ]
+        }
+    ]
+}
