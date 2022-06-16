@@ -1,7 +1,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 01:11:55
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 01:20:31
+# @Last Modified time: 2022-06-16 01:45:55
 # This workflow will build rule sets with python script
 
 name: build rules
@@ -17,9 +17,7 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
