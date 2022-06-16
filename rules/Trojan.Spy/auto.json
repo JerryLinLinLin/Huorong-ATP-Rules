@@ -1,5 +1,22 @@
 {
     "ver": "5.0",
     "tag": "hipsuser_auto",
-    "data": {}
+    "data": {
+        "*\\Windows\\*\\RuntimeBroker.exe" : [
+            {
+                "res_path": "*\\Users\\*\\AppData\\Local\\Packages\\*png",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+            }
+        ],
+        "*\\Program Files*" : [
+            {
+                "res_path": "*\\Users\\*\\AppData\\Local\\>\\>screen*png",
+                "montype": 1,
+                "action_type": 1,
+                "treatment": 0
+            }
+        ]
+    }
 }

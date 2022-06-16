@@ -9,6 +9,14 @@
                 "action_type": 5,
                 "treatment": 0
             }
+        ],
+        "*\\Users\\*\\AppData\\Local\\Temp\\*" : [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
         ]
     }
 }
