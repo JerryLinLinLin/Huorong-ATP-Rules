@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-15 23:23:26
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 01:11:40
+# @Last Modified time: 2022-06-16 01:16:02
 
 import os
 import json
@@ -23,8 +23,8 @@ def main():
     auto_schema = json.loads(auto_schema_res.decode('utf-8'))
 
     # walk through rule sets
-    print(os.getcwd() + "\\rules")
-    for path, dirs, files in os.walk(os.getcwd() + "\\rules"):
+    print(os.getcwd() + os.sep +"rules")
+    for path, dirs, files in os.walk(os.getcwd() + os.sep +"rules"):
         for filename in files:
 
             if filename == "rule.json":
