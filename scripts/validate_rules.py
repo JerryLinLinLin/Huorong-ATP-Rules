@@ -2,15 +2,20 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-15 23:23:26
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 01:16:02
+# @Last Modified time: 2022-06-16 18:07:27
+
+'''
+This script is to validate hips rules with schema from https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema
+'''
 
 import os
 import json
+import argparse
 from jsonschema import validate
 from urllib.request import urlopen
 
 
-def main():
+def main(folder_path):
     rule_schema_url = "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/rule_schema.json"
     auto_schema_rul = "https://raw.githubusercontent.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema/master/auto_schema.json"
 
@@ -23,8 +28,8 @@ def main():
     auto_schema = json.loads(auto_schema_res.decode('utf-8'))
 
     # walk through rule sets
-    print(os.getcwd() + os.sep +"rules")
-    for path, dirs, files in os.walk(os.getcwd() + os.sep +"rules"):
+    # print(os.getcwd() + os.sep + relpath)
+    for path, dirs, files in os.walk(folder_path):
         for filename in files:
 
             if filename == "rule.json":
@@ -42,15 +47,21 @@ def main():
                 print("Validating auto: %s" % auto_full_path)
                 validate(instance=auto_json, schema=auto_schema)
                 continue
-            
+
             if filename != "":
                 full_path = os.path.join(path, filename)
                 print("Illegal filename: %s" % full_path)
                 exit(-1)
-            
+
     print("PASS! validate_rules.py")
     return 0
 
+
 if __name__ == "__main__":
-    main()
+    # get args
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--path", type=str, required=True,
+                        help="folder relpath to check")
+    args = parser.parse_args()
+    main(args.path)
     exit(0)

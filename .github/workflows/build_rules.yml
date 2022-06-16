@@ -1,7 +1,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 01:11:55
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 01:45:55
+# @Last Modified time: 2022-06-16 18:08:35
 # This workflow will build rule sets with python script
 
 name: build rules
@@ -30,4 +30,4 @@ jobs:
         if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
     - name: Run Rule Validation
       run: |
-        python scripts/validate_rules.py
+        python scripts/validate_rules.py --path rules
