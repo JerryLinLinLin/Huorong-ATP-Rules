@@ -1,7 +1,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 01:11:55
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 18:08:35
+# @Last Modified time: 2022-06-17 17:50:11
 # This workflow will build rule sets with python script
 
 name: build
@@ -34,4 +34,9 @@ jobs:
     - name: Merge rule sets
       run: |
         python scripts/merge_rules.py --path rules --output output
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+        with:
+          name: my-artifact
+          path: output/*json
     
