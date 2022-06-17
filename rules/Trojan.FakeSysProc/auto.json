@@ -2,77 +2,39 @@
   "ver": "5.0",
   "tag": "hipsuser_auto",
   "data": {
-    ">\\Program Files*.exe": [
+    "*": [
       {
-        "res_path": "*\\svchost.exe",
+        "res_path": "*\\Windows\\*\\svchost.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
       },
       {
-        "res_path": "*\\lsass.exe",
+        "res_path": "*\\Windows\\*\\lsass.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
       },
       {
-        "res_path": "*\\services.exe",
+        "res_path": "*\\Windows\\*\\services.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
       },
       {
-        "res_path": "*\\winlogon.exe",
+        "res_path": "*\\Windows\\*\\winlogon.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
       },
       {
-        "res_path": "*\\csrss.exe",
+        "res_path": "*\\Windows\\*\\csrss.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
       },
       {
-        "res_path": "*\\smss.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      }
-    ],
-    "*\\Windows\\*": [
-      {
-        "res_path": "*\\svchost.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      },
-      {
-        "res_path": "*\\lsass.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      },
-      {
-        "res_path": "*\\services.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      },
-      {
-        "res_path": "*\\winlogon.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      },
-      {
-        "res_path": "*\\csrss.exe",
-        "montype": 0,
-        "action_type": 16,
-        "treatment": 0
-      },
-      {
-        "res_path": "*\\smss.exe",
+        "res_path": "*\\Windows\\*\\smss.exe",
         "montype": 0,
         "action_type": 16,
         "treatment": 0
