@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 17:47:09
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-17 01:56:22
+# @Last Modified time: 2022-06-17 17:36:57
 
 '''
 Merge all rule.json into one file.
@@ -52,6 +52,9 @@ def main(input_path, output_path):
         json.dump(rule_sum_dict, f, indent=4, sort_keys=True)
     with open(os.sep.join([output_path, "Auto.json"]), 'w') as f:
         json.dump(auto_sum_dict, f, indent=4, sort_keys=True)
+
+    print("Output Rule file to %s" % os.sep.join([output_path, "Rule.json"]))
+    print("Output Rule file to %s" % os.sep.join([output_path, "Rule.json"]))
 
 
 if __name__ == "__main__":
