@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 17:47:09
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-17 17:36:57
+# @Last Modified time: 2022-06-17 17:39:26
 
 '''
 Merge all rule.json into one file.
@@ -28,6 +28,7 @@ def main(input_path, output_path):
             if filename == "rule.json":
                 rule_full_path = os.path.join(path, filename)
                 rule_dict = json.load(open(rule_full_path))
+                print("Merging file: %s" % rule_full_path)
                 # loop each rule in sub rule files
                 for each_rule in rule_dict["data"]:
                     rule_sum_dict["data"] = rule_sum_dict["data"] + \
@@ -36,6 +37,7 @@ def main(input_path, output_path):
             if filename == "auto.json":
                 auto_full_path = os.path.join(path, filename)
                 auto_dict = json.load(open(auto_full_path))
+                print("Merging file: %s" % auto_full_path)
                 # loop each auto in sub auto files
                 for each_key in dict(auto_dict["data"]).keys():
                     # check if key already exist
