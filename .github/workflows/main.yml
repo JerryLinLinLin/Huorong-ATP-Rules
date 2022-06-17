@@ -4,7 +4,7 @@
 # @Last Modified time: 2022-06-16 18:08:35
 # This workflow will build rule sets with python script
 
-name: build rules
+name: build
 
 on:
   push:
@@ -28,6 +28,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
-    - name: Run Rule Validation
+    - name: Run rule validation
       run: |
         python scripts/validate_rules.py --path rules
+    - name: Merge rule sets
+      run: |
+        python scripts/merge_rules.py --path rules --output output
+    
