@@ -5,7 +5,8 @@ on:
     tags:
       - "v*.*.*"
 
-permissions: read-all|write-all
+permissions:
+  contents: write
 
 jobs:
   build:
