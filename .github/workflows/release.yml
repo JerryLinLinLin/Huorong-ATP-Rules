@@ -34,7 +34,7 @@ jobs:
         path: output/*json
     - name: Pack rule files
       run: |
-        zip Huorong_ATP_Rules_${{ github.ref_name }}.zip ./output/*
+        cd output && zip Huorong_ATP_Rules_${{ github.ref_name }}.zip ./*
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
