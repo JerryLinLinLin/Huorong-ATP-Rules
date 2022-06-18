@@ -4,7 +4,7 @@
 # @Last Modified time: 2022-06-17 17:50:11
 # This workflow will build rule sets with python script
 
-name: build
+name: Build
 
 on:
   push:
