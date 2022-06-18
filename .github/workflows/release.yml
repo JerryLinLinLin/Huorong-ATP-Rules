@@ -27,11 +27,6 @@ jobs:
     - name: Merge rule sets
       run: |
         python scripts/merge_rules.py --path rules --output output
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.1.0
-      with:
-        name: my-artifact
-        path: output/*json
     - name: Pack rule files
       run: |
         cd output && zip Huorong_ATP_Rules_${{ github.ref_name }}.zip ./*
