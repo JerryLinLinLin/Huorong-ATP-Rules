@@ -39,4 +39,13 @@ jobs:
       with:
         name: my-artifact
         path: output/*json
+    - name: Pack rule files
+      run: zip Huorong_ATP_Rules_${{ github.ref }}.zip ./output/*
+      if: startsWith(github.ref, 'refs/tags/')
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: Huorong_ATP_Rules_${{ github.ref }}.zip
+        draft: true
     
