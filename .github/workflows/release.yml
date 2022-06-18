@@ -38,5 +38,5 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: Huorong_ATP_Rules_${{ github.ref }}.zip
+        files: Huorong_ATP_Rules_${{ github.ref_name }}.zip
         draft: true
