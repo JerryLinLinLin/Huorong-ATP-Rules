@@ -1,7 +1,5 @@
 ## Exploit.MSOffice 规则组
 
----
-
 ### 规则：Exploit.MSOffice.A
 
 状态：启用
