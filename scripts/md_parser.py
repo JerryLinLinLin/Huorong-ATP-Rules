@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-25 00:30:19
+# @Last Modified time: 2022-06-25 00:50:49
 
 import argparse
 import hashlib
@@ -61,10 +61,13 @@ def get_montype_string_zh_cn(montype: int):
         return "注册表"
 
 
-def readme_zh_cn(rule_set_path, rule_dict):
+def readme_zh_cn(rule_set_path, rule_dict, mdFile):
     rule_set_name = str(rule_set_path)[str(rule_set_path).rindex(
         os.path.sep) + 1:len(str(rule_set_path))]
-    mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README"]))
+    isCumulative = True
+    if mdFile is None:
+        isCumulative = False
+        mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README"]))
     mdFile.new_header(level=1, title=rule_set_name + " 规则组")
     for each_rule in rule_dict["data"]:
         mdFile.new_header(level=2, title="规则：" + each_rule["name"])
@@ -80,17 +83,22 @@ def readme_zh_cn(rule_set_path, rule_dict):
 
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
-    mdFile.new_table_of_contents(table_title='目录', depth=2)
-    mdFile.create_md_file()
+    if (isCumulative is False):
+        mdFile.new_table_of_contents(table_title='目录', depth=2)
+        mdFile.create_md_file()
 
 
 def main(folder_path):
+    mdFile = MdUtils(file_name=os.sep.join([folder_path, "Rule_Summary"]))
     for path, dirs, files in os.walk(folder_path):
         for filename in files:
             if filename == "rule.json":
                 rule_full_path = os.path.join(path, filename)
                 rule_dict = json.load(open(rule_full_path))
-                readme_zh_cn(path, rule_dict)
+                readme_zh_cn(path, rule_dict, None)
+                readme_zh_cn(path, rule_dict, mdFile)
+    mdFile.new_table_of_contents(table_title='目录', depth=2)
+    mdFile.create_md_file()
 
 
 if __name__ == "__main__":
