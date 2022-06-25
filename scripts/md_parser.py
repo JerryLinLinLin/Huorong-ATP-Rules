@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-24 23:27:00
+# @Last Modified time: 2022-06-24 23:29:56
 
 import argparse
 import hashlib
@@ -71,7 +71,7 @@ def readme_zh_cn(rule_set_path, rule_dict):
             src_proc=each_rule["procname"], action="提示用户处理" if int(each_rule["power"]) == 1 else "自动阻止"))
         policy_list = list()
         for each_action in each_rule["policies"]:
-            policy_list.append("对路径为{action_path}的{type}进行{action}操作".format(action_path=each_action["res_path"], type=get_montype_string_zh_cn(
+            policy_list.append("对路径为`{action_path}`的{type}进行{action}操作".format(action_path=each_action["res_path"], type=get_montype_string_zh_cn(
                 each_action["montype"]), action=get_action_type_string_zh_cn(each_action["action_type"])))
         mdFile.new_list(policy_list)
 
