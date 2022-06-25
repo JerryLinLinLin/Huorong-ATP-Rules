@@ -1,13 +1,9 @@
-<h3 align="center">火绒高级威胁防护规则</h3>
-
-<div align="center">
+# 火绒高级威胁防护规则
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
+[![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
+[![License](https://img.shields.io/github/license/JerryLinLinLin/Huorong-ATP-Rules)](/LICENSE)
 
 ---
 
