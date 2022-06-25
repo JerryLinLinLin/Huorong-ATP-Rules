@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 17:47:09
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-17 17:45:15
+# @Last Modified time: 2022-06-25 16:18:55
 
 '''
 Merge all rule.json into one file.
@@ -14,8 +14,13 @@ import json
 import argparse
 
 
-def main(input_path, output_path):
+def main(input_path:str, output_path:str):
+    """Merge rules into one file, for both rule.json and auto.json
 
+    Args:
+        input_path (str): rule folder path
+        output_path (str): output path
+    """
     # sum of rules and auto
     rule_sum_dict = dict(json.loads(
         '{"ver":"5.0","tag":"hipsuser","data":[]}'))

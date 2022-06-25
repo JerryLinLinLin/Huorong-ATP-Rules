@@ -1,16 +1,13 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 01:11:55
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-17 17:50:11
+# @Last Modified time: 2022-06-25 16:22:16
 # This workflow will build rule sets with python script
 
 name: Build
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  [push,pull_request]
 
 permissions:
   contents: read
