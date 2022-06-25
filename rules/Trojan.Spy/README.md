@@ -14,7 +14,7 @@
   
 状态：启用
 
-源程序`*`做出以下操作时，提示用户处理
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\ProgramData\*Cookie*.txt`的文件进行创建操作
 - 对路径为`*\Users\*\AppData\Local\Temp\*Cookie*txt`的文件进行创建操作
 - 对路径为`*\Users\*\AppData\Local\>\>\>Cookie>txt`的文件进行创建操作

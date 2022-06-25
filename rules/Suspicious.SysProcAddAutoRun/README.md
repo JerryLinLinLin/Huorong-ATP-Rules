@@ -14,7 +14,7 @@
   
 状态：启用
 
-源程序`*\Windows\*`做出以下操作时，提示用户处理
+行为描述：源程序`*\Windows\*`做出以下操作时，提示用户处理
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Run*`的注册表进行创建、写入操作
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`的文件进行创建操作
   

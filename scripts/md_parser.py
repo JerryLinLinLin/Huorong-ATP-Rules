@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-24 23:33:18
+# @Last Modified time: 2022-06-25 00:30:19
 
 import argparse
 import hashlib
@@ -70,7 +70,7 @@ def readme_zh_cn(rule_set_path, rule_dict):
         mdFile.new_header(level=2, title="规则：" + each_rule["name"])
         mdFile.new_line(
             text="状态：" + ("启用" if int(each_rule["power"]) == 1 else "未启用"))
-        mdFile.new_paragraph(text="源程序`{src_proc}`做出以下操作时，{action}".format(
+        mdFile.new_paragraph(text="行为描述：源程序`{src_proc}`做出以下操作时，{action}".format(
             src_proc=each_rule["procname"], action="提示用户处理" if int(each_rule["power"]) == 1 else "自动阻止"))
         policy_list = list()
         for each_action in each_rule["policies"]:
