@@ -1,109 +1,84 @@
-<h3 align="center">火绒高级威胁防护规则</h3>
-
-<div align="center">
+[English](/README_en_us.md)
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
+[![License](https://img.shields.io/github/license/JerryLinLinLin/Huorong-ATP-Rules)](/LICENSE)
 
-</div>
+# 火绒高级威胁防护规则
 
----
+基于 [MITRE ATT&CK™](https://attack.mitre.org/) 和恶意软件行为特征编写而成的火绒自定义防护规则，能够检测，阻止，拦截各类恶意软件，[高级持续性威胁（APT）](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81)的攻击载体和攻击途径，典型的如无文件攻击，漏洞攻击，加密勒索等。
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
+## 安装/导入规则
 
-## 📝 Table of Contents
+下载[最新规则版本](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)，解压文件可得`Rule.json`, `Auto.json`。打开火绒主界面->防护中心->高级防护->自定义规则，点击开关启用，点击项目->进入高级防护设置项，在自定义规则设置界面->导入->选择`Rule.json`，在自动处理设置页面->导入->选择`Auto.json`。版本更新时请手动删除旧规则然后重新导入。
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+## 规则内容
 
-## 🧐 About <a name = "about"></a>
+- Office 漏洞攻击防护
+- 勒索防护
+- 无文件攻击防护
+- 流行恶意软件家族防护
+- [...详见规则文档](/rules/README.md)
 
-Write about 1-2 paragraphs describing the purpose of your project.
+## 规则目录
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+所有规则位于`rules/`目录下，子文件夹代表不同规则组，以`威胁类别.行为描述/病毒家族`命名，例如`Exploit.MSOffice`。
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+每个子目录下含有规则文件`rule.json`、`auto.json`，为当前规则组的规则文件和对应的自动处理文件。每项规则以`当前规则组名称+字母`命名，例如`Exploit.MSOffice`。
 
-### Prerequisites
+每条规则的具体用途可在各规则组文件夹下`README.md`找到，或在`Rules`根目录下找到。
 
-What things you need to install the software and how to install them.
+目录结构如下
 
 ```
-Give examples
+.
+├── Classification.Description1
+├── Classification.Description2
+│   ├── rule.json
+│   ├── auto.json
+│   └── README.md
+└── README.md
 ```
 
-### Installing
+## 自动化脚本
 
-A step by step series of examples that tell you how to get a development env running.
+位于`scripts/`目录下，用于自动检查规则文件格式、导出/合并所有规则组，生成规则说明文档等，仅限于此规则目录结构。
 
-Say what the step will be
-
+- `validate_rules.py` - 验证规则文件，基于此[schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema)
 ```
-Give the example
-```
+usage: validate_rules.py [-h] --path PATH
 
-And repeat
-
-```
-until finished
+optional arguments:
+  -h, --help   show this help message and exit
+  --path PATH  folder path to check
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+- `merge_rules.py` - 将规则组合并为一个文件，方便导入。
 ```
-Give an example
+usage: merge_rules.py [-h] --path PATH --output OUTPUT
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --path PATH      rule folder path to merge
+  --output OUTPUT  output folder path
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+- `md_parser.py` - 生成规则文档。
 ```
-Give an example
+usage: md_parser.py [-h] --path PATH
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --path PATH  rule folder path to generate markdown
 ```
 
-## 🎈 Usage <a name="usage"></a>
+## 更新日志
 
-Add notes about how to use the system.
+详见每次[发布日志](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)
 
-## 🚀 Deployment <a name = "deployment"></a>
+TO-DO: Add changelog.md
 
-Add additional notes about how to deploy this on a live system.
+## 反馈/贡献
 
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+在开Issues或者PR前，请确保阅读[contributing guidelines](/CONTRIBUTING.md)。
