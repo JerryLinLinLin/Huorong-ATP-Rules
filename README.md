@@ -19,73 +19,66 @@
 - 勒索防护
 - 无文件攻击防护
 - 流行恶意软件家族防护
-- [...](/rule/)
+- [...详见规则文档](/rules/README.md)
+
+## 规则目录
+
+所有规则位于`rules/`目录下，子文件夹代表不同规则组，以`威胁类别.行为描述/病毒家族`命名，例如`Exploit.MSOffice`。
+
+每个子目录下含有规则文件`rule.json`、`auto.json`，为当前规则组的规则文件和对应的自动处理文件。每项规则以`当前规则组名称+字母`命名，例如`Exploit.MSOffice`。
+
+每条规则的具体用途可在各规则组文件夹下`README.md`找到，或在`Rules`根目录下找到。
+
+目录结构如下
 
 ```
-Give examples
+.
+├── Classification.Description1
+├── Classification.Description2
+│   ├── rule.json
+│   ├── auto.json
+│   └── README.md
+└── README.md
 ```
 
-### Installing
+## 自动化脚本
 
-A step by step series of examples that tell you how to get a development env running.
+位于`scripts/`目录下，用于自动检查规则文件格式、导出/合并所有规则组，生成规则说明文档等，仅限于此规则目录结构。
 
-Say what the step will be
-
+- `validate_rules.py` - 验证规则文件，基于此[schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema)
 ```
-Give the example
-```
+usage: validate_rules.py [-h] --path PATH
 
-And repeat
-
-```
-until finished
+optional arguments:
+  -h, --help   show this help message and exit
+  --path PATH  folder path to check
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+- `merge_rules.py` - 将规则组合并为一个文件，方便导入。
 ```
-Give an example
+usage: merge_rules.py [-h] --path PATH --output OUTPUT
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --path PATH      rule folder path to merge
+  --output OUTPUT  output folder path
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+- `md_parser.py` - 生成规则文档。
 ```
-Give an example
+usage: md_parser.py [-h] --path PATH
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --path PATH  rule folder path to generate markdown
 ```
 
-## 🎈 Usage <a name="usage"></a>
+## 更新日志
 
-Add notes about how to use the system.
+详见每次[发布日志](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)
 
-## 🚀 Deployment <a name = "deployment"></a>
+TO-DO: Add changelog.md
 
-Add additional notes about how to deploy this on a live system.
+## 反馈/贡献
 
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+在开Issues或者PR前，请确保阅读[contributing guidelines](/CONTRIBUTING.md)。
