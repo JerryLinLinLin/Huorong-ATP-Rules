@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.FakeSysProc 规则组](#trojanfakesysproc-)
-	* [规则：Trojan.FakeSysProc.A](#trojanfakesysproca)
+* [Trojan.FakeSysProc](#trojanfakesysproc)
+	* [Trojan.FakeSysProc.A](#trojanfakesysproca)
 
-# Trojan.FakeSysProc 规则组
+# Trojan.FakeSysProc
 
-## 规则：Trojan.FakeSysProc.A
+## Trojan.FakeSysProc.A
   
 状态：未启用
 

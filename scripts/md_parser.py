@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-25 00:50:49
+# @Last Modified time: 2022-06-25 01:03:23
 
 import argparse
 import hashlib
@@ -68,9 +68,9 @@ def readme_zh_cn(rule_set_path, rule_dict, mdFile):
     if mdFile is None:
         isCumulative = False
         mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README"]))
-    mdFile.new_header(level=1, title=rule_set_name + " 规则组")
+    mdFile.new_header(level=1, title=rule_set_name)
     for each_rule in rule_dict["data"]:
-        mdFile.new_header(level=2, title="规则：" + each_rule["name"])
+        mdFile.new_header(level=2, title=each_rule["name"])
         mdFile.new_line(
             text="状态：" + ("启用" if int(each_rule["power"]) == 1 else "未启用"))
         mdFile.new_paragraph(text="行为描述：源程序`{src_proc}`做出以下操作时，{action}".format(
@@ -89,7 +89,7 @@ def readme_zh_cn(rule_set_path, rule_dict, mdFile):
 
 
 def main(folder_path):
-    mdFile = MdUtils(file_name=os.sep.join([folder_path, "Rule_Summary"]))
+    mdFile = MdUtils(file_name=os.sep.join([folder_path, "README"]))
     for path, dirs, files in os.walk(folder_path):
         for filename in files:
             if filename == "rule.json":

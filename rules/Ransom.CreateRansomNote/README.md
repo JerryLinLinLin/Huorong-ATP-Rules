@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Ransom.CreateRansomNote 规则组](#ransomcreateransomnote-)
-	* [规则：Ransom.CreateRansomNote.A](#ransomcreateransomnotea)
+* [Ransom.CreateRansomNote](#ransomcreateransomnote)
+	* [Ransom.CreateRansomNote.A](#ransomcreateransomnotea)
 
-# Ransom.CreateRansomNote 规则组
+# Ransom.CreateRansomNote
 
-## 规则：Ransom.CreateRansomNote.A
+## Ransom.CreateRansomNote.A
   
 状态：启用
 

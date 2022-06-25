@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.Remcos 规则组](#trojanremcos-)
-	* [规则：Trojan.Remcos.A](#trojanremcosa)
+* [Trojan.Remcos](#trojanremcos)
+	* [Trojan.Remcos.A](#trojanremcosa)
 
-# Trojan.Remcos 规则组
+# Trojan.Remcos
 
-## 规则：Trojan.Remcos.A
+## Trojan.Remcos.A
   
 状态：未启用
 

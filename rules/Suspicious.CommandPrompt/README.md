@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Suspicious.CommandPrompt 规则组](#suspiciouscommandprompt-)
-	* [规则：Suspicious.CommandPrompt.A](#suspiciouscommandprompta)
+* [Suspicious.CommandPrompt](#suspiciouscommandprompt)
+	* [Suspicious.CommandPrompt.A](#suspiciouscommandprompta)
 
-# Suspicious.CommandPrompt 规则组
+# Suspicious.CommandPrompt
 
-## 规则：Suspicious.CommandPrompt.A
+## Suspicious.CommandPrompt.A
   
 状态：启用
 

@@ -5,13 +5,13 @@
 目录
 ==
 
-* [Ransom.DoubleExt 规则组](#ransomdoubleext-)
-	* [规则：Ransom.DoubleExt.A](#ransomdoubleexta)
-	* [规则：Ransom.DoubleExt.B](#ransomdoubleextb)
+* [Ransom.DoubleExt](#ransomdoubleext)
+	* [Ransom.DoubleExt.A](#ransomdoubleexta)
+	* [Ransom.DoubleExt.B](#ransomdoubleextb)
 
-# Ransom.DoubleExt 规则组
+# Ransom.DoubleExt
 
-## 规则：Ransom.DoubleExt.A
+## Ransom.DoubleExt.A
   
 状态：启用
 
@@ -23,7 +23,7 @@
 - 对路径为`*.xls.>`的文件进行创建操作
 - 对路径为`*.ppt.>`的文件进行创建操作
 
-## 规则：Ransom.DoubleExt.B
+## Ransom.DoubleExt.B
   
 状态：启用
 

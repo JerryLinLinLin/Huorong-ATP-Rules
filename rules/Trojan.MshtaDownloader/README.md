@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.MshtaDownloader 规则组](#trojanmshtadownloader-)
-	* [规则：Trojan.MshtaDownloader.A](#trojanmshtadownloadera)
+* [Trojan.MshtaDownloader](#trojanmshtadownloader)
+	* [Trojan.MshtaDownloader.A](#trojanmshtadownloadera)
 
-# Trojan.MshtaDownloader 规则组
+# Trojan.MshtaDownloader
 
-## 规则：Trojan.MshtaDownloader.A
+## Trojan.MshtaDownloader.A
   
 状态：启用
 

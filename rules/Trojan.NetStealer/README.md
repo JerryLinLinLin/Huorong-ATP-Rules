@@ -5,13 +5,13 @@
 目录
 ==
 
-* [Trojan.NetStealer 规则组](#trojannetstealer-)
-	* [规则：Trojan.NetStealer.A](#trojannetstealera)
-	* [规则：Trojan.NetStealer.B](#trojannetstealerb)
+* [Trojan.NetStealer](#trojannetstealer)
+	* [Trojan.NetStealer.A](#trojannetstealera)
+	* [Trojan.NetStealer.B](#trojannetstealerb)
 
-# Trojan.NetStealer 规则组
+# Trojan.NetStealer
 
-## 规则：Trojan.NetStealer.A
+## Trojan.NetStealer.A
   
 状态：启用
 
@@ -22,7 +22,7 @@
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行读取操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行读取操作
 
-## 规则：Trojan.NetStealer.B
+## Trojan.NetStealer.B
   
 状态：启用
 

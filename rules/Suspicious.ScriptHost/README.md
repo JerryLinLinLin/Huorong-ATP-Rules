@@ -5,13 +5,13 @@
 目录
 ==
 
-* [Suspicious.ScriptHost 规则组](#suspiciousscripthost-)
-	* [规则：Suspicious.ScriptHost.A](#suspiciousscripthosta)
-	* [规则：Suspicious.ScriptHost.B](#suspiciousscripthostb)
+* [Suspicious.ScriptHost](#suspiciousscripthost)
+	* [Suspicious.ScriptHost.A](#suspiciousscripthosta)
+	* [Suspicious.ScriptHost.B](#suspiciousscripthostb)
 
-# Suspicious.ScriptHost 规则组
+# Suspicious.ScriptHost
 
-## 规则：Suspicious.ScriptHost.A
+## Suspicious.ScriptHost.A
   
 状态：启用
 
@@ -21,7 +21,7 @@
 - 对路径为`*.dll`的文件进行创建操作
 - 对路径为`*\Users\*\AppData\*`的程序进行执行操作
 
-## 规则：Suspicious.ScriptHost.B
+## Suspicious.ScriptHost.B
   
 状态：启用
 

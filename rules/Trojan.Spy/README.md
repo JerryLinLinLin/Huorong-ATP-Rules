@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.Spy 规则组](#trojanspy-)
-	* [规则：Trojan.Spy.A](#trojanspya)
+* [Trojan.Spy](#trojanspy)
+	* [Trojan.Spy.A](#trojanspya)
 
-# Trojan.Spy 规则组
+# Trojan.Spy
 
-## 规则：Trojan.Spy.A
+## Trojan.Spy.A
   
 状态：启用
 

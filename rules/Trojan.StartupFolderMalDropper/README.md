@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.StartupFolderMalDropper 规则组](#trojanstartupfoldermaldropper-)
-	* [规则：Trojan.StartupFolderMalDropper.A](#trojanstartupfoldermaldroppera)
+* [Trojan.StartupFolderMalDropper](#trojanstartupfoldermaldropper)
+	* [Trojan.StartupFolderMalDropper.A](#trojanstartupfoldermaldroppera)
 
-# Trojan.StartupFolderMalDropper 规则组
+# Trojan.StartupFolderMalDropper
 
-## 规则：Trojan.StartupFolderMalDropper.A
+## Trojan.StartupFolderMalDropper.A
   
 状态：启用
 

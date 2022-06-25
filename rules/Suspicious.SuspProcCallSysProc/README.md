@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Suspicious.SuspProcCallSysProc 规则组](#suspicioussuspproccallsysproc-)
-	* [规则：Suspicious.SuspProcCallSysProc.A](#suspicioussuspproccallsysproca)
+* [Suspicious.SuspProcCallSysProc](#suspicioussuspproccallsysproc)
+	* [Suspicious.SuspProcCallSysProc.A](#suspicioussuspproccallsysproca)
 
-# Suspicious.SuspProcCallSysProc 规则组
+# Suspicious.SuspProcCallSysProc
 
-## 规则：Suspicious.SuspProcCallSysProc.A
+## Suspicious.SuspProcCallSysProc.A
   
 状态：未启用
 

@@ -5,20 +5,20 @@
 目录
 ==
 
-* [Suspicious.PowerShell 规则组](#suspiciouspowershell-)
-	* [规则：Suspicious.PowerShell.A](#suspiciouspowershella)
-	* [规则：Suspicious.PowerShell.B](#suspiciouspowershellb)
+* [Suspicious.PowerShell](#suspiciouspowershell)
+	* [Suspicious.PowerShell.A](#suspiciouspowershella)
+	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
 
-# Suspicious.PowerShell 规则组
+# Suspicious.PowerShell
 
-## 规则：Suspicious.PowerShell.A
+## Suspicious.PowerShell.A
   
 状态：未启用
 
 行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，自动阻止
 - 对路径为`*\powershell.exe`的程序进行执行操作
 
-## 规则：Suspicious.PowerShell.B
+## Suspicious.PowerShell.B
   
 状态：启用
 

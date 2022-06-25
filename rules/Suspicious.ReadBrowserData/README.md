@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Suspicious.ReadBrowserData 规则组](#suspiciousreadbrowserdata-)
-	* [规则：Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
+* [Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
+	* [Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
 
-# Suspicious.ReadBrowserData 规则组
+# Suspicious.ReadBrowserData
 
-## 规则：Suspicious.ReadBrowserData
+## Suspicious.ReadBrowserData
   
 状态：未启用
 

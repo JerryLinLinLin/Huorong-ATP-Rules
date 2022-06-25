@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Suspicious.SysProcAddAutoRun 规则组](#suspicioussysprocaddautorun-)
-	* [规则：Suspicious.SysProcAddAutoRun.A](#suspicioussysprocaddautoruna)
+* [Suspicious.SysProcAddAutoRun](#suspicioussysprocaddautorun)
+	* [Suspicious.SysProcAddAutoRun.A](#suspicioussysprocaddautoruna)
 
-# Suspicious.SysProcAddAutoRun 规则组
+# Suspicious.SysProcAddAutoRun
 
-## 规则：Suspicious.SysProcAddAutoRun.A
+## Suspicious.SysProcAddAutoRun.A
   
 状态：启用
 

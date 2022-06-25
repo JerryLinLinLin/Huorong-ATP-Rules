@@ -5,12 +5,12 @@
 目录
 ==
 
-* [Trojan.CmstpDownloader 规则组](#trojancmstpdownloader-)
-	* [规则：Trojan.CmstpDownloader.A](#trojancmstpdownloadera)
+* [Trojan.CmstpDownloader](#trojancmstpdownloader)
+	* [Trojan.CmstpDownloader.A](#trojancmstpdownloadera)
 
-# Trojan.CmstpDownloader 规则组
+# Trojan.CmstpDownloader
 
-## 规则：Trojan.CmstpDownloader.A
+## Trojan.CmstpDownloader.A
   
 状态：启用
 
