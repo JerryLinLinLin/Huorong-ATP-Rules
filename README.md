@@ -1,39 +1,25 @@
-# 火绒高级威胁防护规则
+[English](/README_en_us.md)
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
 [![License](https://img.shields.io/github/license/JerryLinLinLin/Huorong-ATP-Rules)](/LICENSE)
 
----
+# 火绒高级威胁防护规则
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
+基于 [MITRE ATT&CK™](https://attack.mitre.org/) 和恶意软件行为特征编写而成的火绒自定义防护规则，能够检测，阻止，拦截各类恶意软件，[高级持续性威胁（APT）](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81)的攻击载体和攻击途径，典型的如无文件攻击，漏洞攻击，加密勒索等。
 
-## 📝 Table of Contents
+## 安装/导入规则
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+下载[最新规则版本](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)，解压文件可得`Rule.json`, `Auto.json`。打开火绒主界面->防护中心->高级防护->自定义规则，点击开关启用，点击项目->进入高级防护设置项，在自定义规则设置界面->导入->选择`Rule.json`，在自动处理设置页面->导入->选择`Auto.json`。版本更新时请手动删除旧规则然后重新导入。
 
-## 🧐 About <a name = "about"></a>
+## 规则内容
 
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
+- Office 漏洞攻击防护
+- 勒索防护
+- 无文件攻击防护
+- 流行恶意软件家族防护
+- [...](/rule/)
 
 ```
 Give examples
