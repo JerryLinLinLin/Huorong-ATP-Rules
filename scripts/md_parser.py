@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-24 23:29:56
+# @Last Modified time: 2022-06-24 23:33:18
 
 import argparse
 import hashlib
@@ -31,6 +31,7 @@ def get_action_type_dict(action_type: int):
     action_type_dict["Read"] = (action_type >> 1) & 1
     action_type_dict["Write"] = (action_type >> 2) & 1
     action_type_dict["Delete"] = (action_type >> 3) & 1
+    action_type_dict["Execute"] = (action_type >> 4) & 1
     return action_type_dict
 
 
@@ -45,7 +46,9 @@ def get_action_type_string_zh_cn(action_type: int):
         ("写入、" if action_type_dict["Write"] == 1 else "")
     action_type_string = action_type_string + \
         ("删除、" if action_type_dict["Delete"] == 1 else "")
-    action_type_string = action_type_string[0:len(action_type_string) - 2]
+    action_type_string = action_type_string + \
+        ("执行、" if action_type_dict["Execute"] == 1 else "")
+    action_type_string = action_type_string[0:len(action_type_string) - 1]
     return action_type_string
 
 
