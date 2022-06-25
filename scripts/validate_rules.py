@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-15 23:23:26
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-16 18:14:47
+# @Last Modified time: 2022-06-24 23:40:09
 
 '''
 This script is to validate hips rules with schema from https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema
@@ -46,11 +46,6 @@ def main(folder_path):
                 print("Validating auto: %s" % auto_full_path)
                 validate(instance=auto_json, schema=auto_schema)
                 continue
-
-            if filename != "":
-                full_path = os.path.join(path, filename)
-                print("Illegal filename: %s" % full_path)
-                exit(-1)
 
     print("PASS! validate_rules.py")
     return 0
