@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-25 01:09:37
+# @Last Modified time: 2022-06-25 16:12:46
 
 import argparse
 import hashlib
@@ -18,14 +18,30 @@ Generate statistic under ./rule/
 '''
 
 
-def get_file_sha256(file_path):
+def get_file_sha256(file_path: str) -> str:
+    """Get a file sha256 checksum
+
+    Args:
+        file_path (str): file to check
+
+    Returns:
+        str: sha256
+    """
     with open(file_path, "rb") as f:
         bytes = f.read()  # read entire file as bytes
         readable_hash = hashlib.sha256(bytes).hexdigest()
         return readable_hash
 
 
-def get_action_type_dict(action_type: int):
+def get_action_type_dict(action_type: int) -> dict:
+    """Get action type dict format of a policy
+
+    Args:
+        action_type (int): action type int in a policy
+
+    Returns:
+        dict: status of action type
+    """
     action_type_dict = dict()
     action_type_dict["Create"] = (action_type >> 0) & 1
     action_type_dict["Read"] = (action_type >> 1) & 1
@@ -35,7 +51,15 @@ def get_action_type_dict(action_type: int):
     return action_type_dict
 
 
-def get_action_type_string_zh_cn(action_type: int):
+def get_action_type_string_zh_cn(action_type: int) -> str:
+    """zh_cn: Get action type string description
+
+    Args:
+        action_type (int): action type int in a policy
+
+    Returns:
+        str: string description
+    """
     action_type_dict = get_action_type_dict(action_type)
     action_type_string = str()
     action_type_string = action_type_string + \
@@ -52,7 +76,15 @@ def get_action_type_string_zh_cn(action_type: int):
     return action_type_string
 
 
-def get_montype_string_zh_cn(montype: int):
+def get_montype_string_zh_cn(montype: int) -> str:
+    """zh_cn: Get montype string description
+
+    Args:
+        montype (int): montype int in a policy
+
+    Returns:
+        str: string description
+    """
     if (montype == 0):
         return "程序"
     if (montype == 1):
@@ -61,7 +93,14 @@ def get_montype_string_zh_cn(montype: int):
         return "注册表"
 
 
-def readme_zh_cn(rule_set_path, rule_dict, mdFile):
+def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
+    """zh_cn: Generate readme for each ruleset, option for generate sum readme
+
+    Args:
+        rule_set_path (str): current rule set path
+        rule_dict (dict): json content of a rule set
+        mdFile (MdUtils): pass if cumulative, otherwise pass None
+    """
     rule_set_name = str(rule_set_path)[str(rule_set_path).rindex(
         os.path.sep) + 1:len(str(rule_set_path))]
     isCumulative = True
@@ -88,7 +127,12 @@ def readme_zh_cn(rule_set_path, rule_dict, mdFile):
         mdFile.create_md_file()
 
 
-def main(folder_path):
+def main(folder_path:str):
+    """Main
+
+    Args:
+        folder_path (str): rule folder
+    """
     mdFile = MdUtils(file_name=os.sep.join([folder_path, "README"]))
     for path, dirs, files in os.walk(folder_path):
         for filename in files:
