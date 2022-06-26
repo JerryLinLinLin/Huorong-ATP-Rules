@@ -53,6 +53,20 @@
               "action_type": 2,
               "treatment": 0
             }
+          ],
+          "*\\Microsoft\\Edge\\*" : [
+            {
+              "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*",
+              "montype": 1,
+              "action_type": 2,
+              "treatment": 0
+            },
+            {
+              "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*",
+              "montype": 1,
+              "action_type": 2,
+              "treatment": 0
+            }
           ]
     }
 }

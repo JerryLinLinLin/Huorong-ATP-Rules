@@ -12,9 +12,9 @@
 
 ## Trojan.Remcos.A
   
-状态：未启用
+状态：启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*Remcos*`的注册表进行**创建、写入**操作
   
-***rule.json hash: 08fba77bc21b0d6c3e5bd254ba34246352d3962013bb93d4f668ec4da8e0e60d***
+***rule.json hash: f0d47e95129efb91fd8909c6b9cf4dcedeb0105a461f646d1e1878f4413b59f2***

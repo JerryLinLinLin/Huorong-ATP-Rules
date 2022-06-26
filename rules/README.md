@@ -291,12 +291,12 @@
 
 ## Suspicious.SuspProcCallSysProc.A
   
-状态：未启用
+状态：启用
 
-行为描述：源程序`*\Users\*\AppData\>\>\>`做出以下操作时，自动阻止
+行为描述：源程序`*\Users\*\AppData\>\>\>`做出以下操作时，提示用户处理
 - 对路径为`*\Windows\Sys?????\*.exe`的程序进行**执行**操作
   
-***rule.json hash: b5c263fe0f878536b37daa38d98e32f854431f75754a5b59ffd881b0d5f70ba3***
+***rule.json hash: 8976ebf9e98afb7f6c1285c15f2a65f5a5a6bfe826f1818fda1b0929cf0a9a47***
 # Suspicious.SysProcAddAutoRun
 
 ## Suspicious.SysProcAddAutoRun.A
@@ -326,9 +326,9 @@
 
 ## Trojan.FakeSysProc.A
   
-状态：未启用
+状态：启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\svchost.exe`的程序进行**执行**操作
 - 对路径为`*\lsass.exe`的程序进行**执行**操作
 - 对路径为`*\services.exe`的程序进行**执行**操作
@@ -336,7 +336,7 @@
 - 对路径为`*\csrss.exe`的程序进行**执行**操作
 - 对路径为`*\smss.exe`的程序进行**执行**操作
   
-***rule.json hash: 11379f4626e28e779f0a4c030f0aecd2c7ba07b3eb000f11f8b2b5a1be13d6f5***
+***rule.json hash: 5d9ecb177de9dbf727527545e505b234f0b67bd84ba9626eccbfb5e5167e7a0a***
 # Trojan.MshtaDownloader
 
 ## Trojan.MshtaDownloader.A
@@ -375,12 +375,12 @@
 
 ## Trojan.Remcos.A
   
-状态：未启用
+状态：启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*Remcos*`的注册表进行**创建、写入**操作
   
-***rule.json hash: 08fba77bc21b0d6c3e5bd254ba34246352d3962013bb93d4f668ec4da8e0e60d***
+***rule.json hash: f0d47e95129efb91fd8909c6b9cf4dcedeb0105a461f646d1e1878f4413b59f2***
 # Trojan.Spy
 
 ## Trojan.Spy.A
