@@ -1,4 +1,4 @@
-[English](/README_en_us.md)
+简体中文 | [English](/README_en_us.md)
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
@@ -12,6 +12,9 @@
 ## 安装/导入规则
 
 下载[最新规则版本](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)，解压文件可得`Rule.json`, `Auto.json`。打开火绒主界面->防护中心->高级防护->自定义规则，点击开关启用，点击项目->进入高级防护设置项，在自定义规则设置界面->导入->选择`Rule.json`，在自动处理设置页面->导入->选择`Auto.json`。版本更新时请手动删除旧规则然后重新导入。
+
+## 新手上路
+
 
 ## 规则内容
 
