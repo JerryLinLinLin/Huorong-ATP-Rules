@@ -10,13 +10,13 @@
 
 Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™](https://attack.mitre.org/) and malware behavioral characteristics. It can detect, block and intercept all kinds of malware, [Advanced Persistent Threat (APT)](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81) attack vectors and attack paths, such as fileless attacks, exploit attacks, crypto-ransomware, etc. It is also highly scalable, maintainable and community developer friendly.
 
-- [Installation/import rules](#Installimportrules)
-- [Beginner's Guide](#%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF)
-- [Rules Content](#%E8%A7%84%E5%88%99%E5%86%85%E5%AE%B9)
-- [Rules Directory](#%E8%A7%84%E5%88%99%E7%9B%AE%E5%BD%95)
-- [Automation Scripts](#%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC)
-- [Update Log](#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
-- [Feedback/contribution](#%E5%8F%8D%E9%A6%88%E8%B4%A1%E7%8C%AE)
+- [Installation/Import Rules](#installimport-rules)
+- [Beginner's Guide](#beginners-guide)
+- [Rules Content](#rules-content)
+- [Rules Directory](#rules-directory)
+- [Automation Scripts](#automation-scripts)
+- [Changelog](#changelog)
+- [Feedback/Contribution](#feedbackcontribution)
 
 ## Install/import rules
 
@@ -30,7 +30,7 @@ Import the rules as shown [in this figure](images/import_rules.jpg).
 
 To prevent false positives, some rules are not enabled by default, please read the rule document and then choose to enable them.
 
-## Rules content
+## Rules Content
 
 - MS Office Vulnerability Attack Protection
 - Ransomware Protection
@@ -38,7 +38,7 @@ To prevent false positives, some rules are not enabled by default, please read t
 - Popular Malware Family Threat Prevention
 - [... See the rule documentation for details](/rules/README_en_us.md)
 
-## Rules directory
+## Rules Directory
 
 All rules are located in the `rules/` directory, with subfolders representing different rule groups, named after the `threat category. Behavior descriptions/virus families` are named, e.g. `Exploit.MSOffice`.
 
@@ -91,12 +91,12 @@ Located in the `scripts/` directory, it is used to automatically check the rule 
       -h, --help   show this help message and exit
       --path PATH  rule folder path to generate markdown
 
-## Update Log
+## Changelog
 
 See the [per-post log](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest) for details
 
 TO-DO: Add changelog.md
 
-## Feedback/contribution
+## Feedback/Contribution
 
-Make sure you read the [Contributing guidelines](/CONTRIBUTING.md) before opening Issues or PR.
+Make sure you read the [contributing guidelines](/CONTRIBUTING.md) before opening Issues or PR.
