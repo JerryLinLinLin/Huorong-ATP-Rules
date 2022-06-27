@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-15 23:23:26
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-25 16:13:44
+# @Last Modified time: 2022-06-27 17:48:41
 
 '''
 This script is to validate hips rules with schema from https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema
@@ -36,7 +36,7 @@ def main(folder_path:str) -> int:
     auto_schema = json.loads(auto_schema_res.decode('utf-8'))
 
     # walk through rule sets
-    for path, dirs, files in os.walk(folder_path):
+    for path, dirs, files in sorted(os.walk(folder_path)):
         for filename in files:
 
             if filename == "rule.json":

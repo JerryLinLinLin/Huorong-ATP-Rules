@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-27 16:47:14
+# @Last Modified time: 2022-06-27 17:48:24
 
 import argparse
 import hashlib
@@ -210,7 +210,7 @@ def main(folder_path:str):
     """
     mdFile_zh_cn = MdUtils(file_name=os.sep.join([folder_path, "README"]))
     mdFile_en_us = MdUtils(file_name=os.sep.join([folder_path, "README_en_us"]))
-    for path, dirs, files in os.walk(folder_path):
+    for path, dirs, files in sorted(os.walk(folder_path)):
         for filename in files:
             if filename == "rule.json":
                 rule_full_path = os.path.join(path, filename)

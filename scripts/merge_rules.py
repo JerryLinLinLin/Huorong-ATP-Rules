@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-16 17:47:09
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-25 16:18:55
+# @Last Modified time: 2022-06-27 17:48:32
 
 '''
 Merge all rule.json into one file.
@@ -27,7 +27,7 @@ def main(input_path:str, output_path:str):
     auto_sum_dict = dict(json.loads(
         '{"ver":"5.0","tag":"hipsuser_auto","data":{}}'))
 
-    for path, dirs, files in os.walk(input_path):
+    for path, dirs, files in sorted(os.walk(input_path)):
         for filename in files:
 
             if filename == "rule.json":
