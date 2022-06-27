@@ -27,4 +27,4 @@
 - 对路径为`*.exe`的文件进行**创建**操作
 - 对路径为`*\Users\*\AppData\*`的程序进行**执行**操作
   
-***rule.json hash: a07c32503aed526ce12772851f805a467b3155bdb1cc30e7e84fe2d9fdbdaa4b***
+***rule.json hash: b8719134d7772aa185965fa0b3f36db165a1ce1c5dd8533e41bbfe674f5f3437***

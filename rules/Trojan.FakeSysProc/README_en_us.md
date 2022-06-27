@@ -23,4 +23,4 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Execute` the program under the path `*\csrss.exe`
 - `Execute` the program under the path `*\smss.exe`
   
-***rule.json hash: 5d9ecb177de9dbf727527545e505b234f0b67bd84ba9626eccbfb5e5167e7a0a***
+***rule.json hash: 050c9912a384d8858c1f745894d9172ff45ef8a04c03a3fa7b57f02c8a0634da***
