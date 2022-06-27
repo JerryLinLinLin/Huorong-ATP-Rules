@@ -1,3 +1,6 @@
+- [开发/添加新规则](#开发添加新规则)
+- [Development/Adding New Rules](#development-adding-new-rules)
+
 # 开发/添加新规则
 
 - 在`rules/`下有子文件夹`Template`，以此为模板添加新规则组。
