@@ -12,3 +12,9 @@ assignees: ''
 - 火绒日志 （打开火绒日志界面，选择对应日志，导出/复制粘贴到此处）
 - 截图 （可选）
 - 触发场景描述 （可选）
+
+- Windows version
+- Huorong version
+- Huorong  logs (open the Huorong  log interface, select the corresponding logs, export/copy-paste them here)
+- Screenshots (optional)
+- Methods to reproduce the issue (optional)

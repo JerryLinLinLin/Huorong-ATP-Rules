@@ -9,3 +9,6 @@ assignees: ''
 
 - 需要什么样的规则，能达到什么样的效果
 - 参考链接
+
+- What rules are needed and what effects are expected
+- Reference Links
