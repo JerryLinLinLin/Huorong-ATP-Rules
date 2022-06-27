@@ -19,4 +19,4 @@ When the source process`*\cmstp.exe`initializes the following actions, HIPS modu
 - `Create` the file under the path `*.exe`
 - `Create` the file under the path `*.dll`
   
-***rule.json hash: 11ed30aa824e9ec8efb789c6cf1b0bc5d30030f3732b5b11e6663bb8ee92bf42***
+***rule.json hash: 7a61cc7f5c4d7b6726f51cfc9110e44425f219f4b2165f38c3c959691bce9627***

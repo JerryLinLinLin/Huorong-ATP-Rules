@@ -65,4 +65,4 @@ Behavioral Description:
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   
-***rule.json hash: 3997ac4b56fb80d81d036c3beabcb423cfd73598afa0d93b5861c6523f10ac81***
+***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***

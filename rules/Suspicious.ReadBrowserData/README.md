@@ -18,4 +18,4 @@
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行**读取**操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行**读取**操作
   
-***rule.json hash: f9af5aadaebe552fe3df866cf91edf2744eaea4da3fd2f29dba025b48996d057***
+***rule.json hash: d13b8a311d712501d84b1645052ed84e506624c200a1f8a05ae649e07d258e76***
