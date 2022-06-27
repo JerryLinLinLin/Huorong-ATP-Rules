@@ -28,7 +28,7 @@
 
 - 例外项/自动处理规则请添加在对应的`auto.json`文件内。
 
-- 添加完新规则组后请运行Github Actions `Generate Documentationy` 生成对应规则文档。
+- 添加完新规则组后请运行Github Actions `Generate Documentation` 生成对应规则文档。
 
 # Development/Adding New Rules
 
@@ -57,5 +57,5 @@
 
 - Exceptions/automatic rules should be added in the corresponding `auto.json` file.
 
-- After adding the new rule group, please run Github Actions `Generate Documentationy` to generate the corresponding rule file. 
+- After adding the new rule group, please run Github Actions `Generate Documentation` to generate the corresponding rule file. 
 
