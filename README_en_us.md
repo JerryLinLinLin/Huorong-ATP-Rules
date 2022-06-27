@@ -36,7 +36,7 @@ To prevent false positives, some rules are not enabled by default, please read t
 - Ransomware Protection
 - Fileless Attack Protection
 - Popular Malware Family Threat Prevention
-- [... See the rule documentation for details](/rules/README.md)
+- [... See the rule documentation for details](/rules/README_en_us.md)
 
 ## Rules directory
 
