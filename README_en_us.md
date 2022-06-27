@@ -93,7 +93,7 @@ Located in the `scripts/` directory, it is used to automatically check the rule 
 
 ## Changelog
 
-See the [per-post log](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest) for details
+See the [release log](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest) for details
 
 TO-DO: Add changelog.md
 
