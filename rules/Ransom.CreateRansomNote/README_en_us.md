@@ -12,9 +12,10 @@ Contents
 
 ## Ransom.CreateRansomNote.A
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*`initializes the following actions, HIPS module should let the user decide.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `>\ProgramData\>.txt`
 - `Create` the file under the path `>\Program Files (x86)\>.txt`
 - `Create` the file under the path `>\Users\*\AppData\Local\>.txt`

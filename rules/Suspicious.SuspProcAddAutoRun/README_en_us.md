@@ -12,9 +12,10 @@ Contents
 
 ## Suspicious.SuspProcAddAutoRun.A
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*\Users\*\AppData\>\>\>`initializes the following actions, HIPS module should let the user decide.
+When the source process`*\Users\*\AppData\>\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
   

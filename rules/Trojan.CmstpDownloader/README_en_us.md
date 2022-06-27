@@ -12,9 +12,10 @@ Contents
 
 ## Trojan.CmstpDownloader.A
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*\cmstp.exe`initializes the following actions, HIPS module should let the user decide.
+When the source process`*\cmstp.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.exe`
 - `Create` the file under the path `*.dll`
   

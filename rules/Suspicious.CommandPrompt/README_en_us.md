@@ -12,9 +12,10 @@ Contents
 
 ## Suspicious.CommandPrompt.A
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*\cmd.exe`initializes the following actions, HIPS module should let the user decide.
+When the source process`*\cmd.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
 - `Create` the file under the path `*.exe`
 - `Create` the file under the path `*.vb?`

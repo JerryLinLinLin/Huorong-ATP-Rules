@@ -12,9 +12,10 @@ Contents
 
 ## Trojan.Remcos.A
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*`initializes the following actions, HIPS module should let the user decide.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*Remcos*`
   
 ***rule.json hash: f0d47e95129efb91fd8909c6b9cf4dcedeb0105a461f646d1e1878f4413b59f2***

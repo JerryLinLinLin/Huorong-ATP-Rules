@@ -13,16 +13,18 @@ Contents
 
 ## Suspicious.PowerShell.A
   
-Status: Disabled
+Status: Disabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should automatically block.
+When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\powershell.exe`
 
 ## Suspicious.PowerShell.B
   
-Status: Enabled
+Status: Enabled  
+Behavioral Description: 
 
-Behavioral Description: When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide.
+When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the registry under the path `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`
 - `Create` the file under the path `*.exe`
 - `Execute` the program under the path `*\Users\*\AppData\*`
