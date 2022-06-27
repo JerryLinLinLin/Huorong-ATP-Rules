@@ -2,7 +2,7 @@
 name: 误报反馈 | False Positive Report
 about: 规则误报 | Some rules have FPs
 title: "[FP]"
-labels: ''
+labels: false positive
 assignees: ''
 
 ---
