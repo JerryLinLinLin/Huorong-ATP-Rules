@@ -26,3 +26,33 @@
 - 例外项/自动处理规则请添加在对应的`auto.json`文件内。
 
 - 添加完新规则组后请运行`md_parser.py` 生成对应规则文档。TO-DO: Add to CI
+
+# Development/Adding New Rules
+
+- Under `rules/` there is a subfolder `Template`, use this as a template to add new rule groups.
+
+- Use this [Json Schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema) to ensure that rule files are properly formatted
+
+- The rule group naming scheme is `Threat Category. Behavior description/virus family`. The current threat categories can be classified as
+
+  - `Backdoor`
+  - `Exploit`
+  - `Ransom`
+  - `Suspicious`
+  - `Trojan`
+  - ...
+
+- When a rule group has a malware family to target, the name of the malware family is preferred, e.g. `Trojan.Remcos` stands for a rule targeting the Remcos family. When using behavior descriptions, the following terms need to be abbreviated to avoid long names.
+
+  - `System` -> `Sys`
+  - `Process` -> `Proc`
+  - `Suspicious` -> `Susp`
+  - `Malicious` -> `Mal`
+  - ...
+
+- Each rule is named by the `rule group name. [A-Z]`.
+
+- Exceptions/automatic rules should be added in the corresponding `auto.json` file.
+
+- After adding the new rule group, please run `md_parser.py` to generate the corresponding rule file. TO-DO: Add to CI
+
