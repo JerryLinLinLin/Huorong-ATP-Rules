@@ -25,7 +25,7 @@
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
 * [Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
-	* [Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
+	* [Suspicious.ReadBrowserData.A](#suspiciousreadbrowserdataa)
 * [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
 	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
 	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
@@ -198,7 +198,7 @@
 ***rule.json hash: a07c32503aed526ce12772851f805a467b3155bdb1cc30e7e84fe2d9fdbdaa4b***
 # Suspicious.ReadBrowserData
 
-## Suspicious.ReadBrowserData
+## Suspicious.ReadBrowserData.A
   
 状态：未启用
 
@@ -206,7 +206,7 @@
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行**读取**操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行**读取**操作
   
-***rule.json hash: ba1741093a8cab0b165da7ff972ca3fee71478259430ce3d544ac122c6fe87e4***
+***rule.json hash: f9af5aadaebe552fe3df866cf91edf2744eaea4da3fd2f29dba025b48996d057***
 # Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
