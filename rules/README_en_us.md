@@ -62,9 +62,9 @@ Contents
 
 ## Exploit.MSOffice.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\EXCEL.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*.exe`
 - `Create, Write` the file under the path `*.scr`
@@ -72,17 +72,17 @@ When the source process`*\EXCEL.EXE`initializes the following actions, HIPS modu
 
 ## Exploit.MSOffice.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\EXCEL.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 
 ## Exploit.MSOffice.C
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\POWERPNT.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*.exe`
 - `Create, Write` the file under the path `*.scr`
@@ -90,17 +90,17 @@ When the source process`*\POWERPNT.EXE`initializes the following actions, HIPS m
 
 ## Exploit.MSOffice.D
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\POWERPNT.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 
 ## Exploit.MSOffice.E
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\WINWORD.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*.exe`
 - `Create, Write` the file under the path `*.scr`
@@ -108,17 +108,17 @@ When the source process`*\WINWORD.EXE`initializes the following actions, HIPS mo
 
 ## Exploit.MSOffice.F
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\WINWORD.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 
 ## Exploit.MSOffice.G
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\EQNEDT32.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*.exe`
 - `Create, Write` the file under the path `*.scr`
@@ -126,9 +126,9 @@ When the source process`*\EQNEDT32.EXE`initializes the following actions, HIPS m
 
 ## Exploit.MSOffice.H
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\EQNEDT32.EXE`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
   
@@ -137,9 +137,9 @@ When the source process`*\EQNEDT32.EXE`initializes the following actions, HIPS m
 
 ## Ransom.CreateRansomNote.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `>\ProgramData\>.txt`
 - `Create` the file under the path `>\Program Files (x86)\>.txt`
@@ -152,9 +152,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Ransom.DoubleExt.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.docx.>`
 - `Create` the file under the path `*.xlsx.>`
@@ -165,9 +165,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Ransom.DoubleExt.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `>\Users\>\Pictures\*.jpg.>`
 - `Create` the file under the path `>\Users\>\Pictures\*.png.>`
@@ -179,9 +179,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.CommandPrompt.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\cmd.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
 - `Create` the file under the path `*.exe`
@@ -193,17 +193,17 @@ When the source process`*\cmd.exe`initializes the following actions, HIPS module
 
 ## Suspicious.PowerShell.A
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\powershell.exe`
 
 ## Suspicious.PowerShell.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the registry under the path `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`
 - `Create` the file under the path `*.exe`
@@ -214,9 +214,9 @@ When the source process`*\powershell.exe`initializes the following actions, HIPS
 
 ## Suspicious.ReadBrowserData.A
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
 - `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
@@ -226,9 +226,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>`
 - `Execute` the program under the path `*\Users\*\AppData\>`
@@ -243,9 +243,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Recycler\*`
 - `Execute` the program under the path `*\$RECYCLE.BIN\*`
@@ -253,25 +253,25 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.C
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\ProgramData\>\>.exe`
 
 ## Suspicious.RunFromSusPath.D
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Sys?????\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
 
 ## Suspicious.RunFromSusPath.E
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   
@@ -280,9 +280,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.ScriptHost.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\?script.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Windows\Sys?????\*.exe`
 - `Create` the file under the path `*.exe`
@@ -291,9 +291,9 @@ When the source process`*\?script.exe`initializes the following actions, HIPS mo
 
 ## Suspicious.ScriptHost.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
   
@@ -302,9 +302,9 @@ When the source process`*\Windows\Sys?????\*.exe`initializes the following actio
 
 ## Suspicious.SuspProcAddAutoRun.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Users\*\AppData\>\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
@@ -314,9 +314,9 @@ When the source process`*\Users\*\AppData\>\>\>`initializes the following action
 
 ## Suspicious.SuspProcCallSysProc.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Users\*\AppData\>\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Windows\Sys?????\*.exe`
   
@@ -325,9 +325,9 @@ When the source process`*\Users\*\AppData\>\>\>`initializes the following action
 
 ## Suspicious.SysProcAddAutoRun.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
@@ -340,9 +340,9 @@ When the source process`*\Windows\*`initializes the following actions, HIPS modu
 
 ## Trojan.CmstpDownloader.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\cmstp.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.exe`
 - `Create` the file under the path `*.dll`
@@ -352,9 +352,9 @@ When the source process`*\cmstp.exe`initializes the following actions, HIPS modu
 
 ## Trojan.FakeSysProc.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\svchost.exe`
 - `Execute` the program under the path `*\lsass.exe`
@@ -368,9 +368,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Trojan.MshtaDownloader.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\mshta.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Windows\Sys?????\*.exe`
 - `Create` the file under the path `*.exe`
@@ -382,9 +382,9 @@ When the source process`*\mshta.exe`initializes the following actions, HIPS modu
 
 ## Trojan.NetStealer.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Microsoft.NET\Framework\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.txt`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\>.ini`
@@ -394,9 +394,9 @@ When the source process`*\Windows\Microsoft.NET\Framework\>\>`initializes the fo
 
 ## Trojan.NetStealer.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\>.ini`
   
@@ -405,9 +405,9 @@ When the source process`*\Windows\>`initializes the following actions, HIPS modu
 
 ## Trojan.Remcos.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*Remcos*`
   
@@ -416,9 +416,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Trojan.Spy.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\ProgramData\*Cookie*.txt`
 - `Create` the file under the path `*\Users\*\AppData\Local\Temp\*Cookie*txt`
@@ -433,9 +433,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Trojan.StartupFolderMalDropper.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.js`
 - `Create, Write` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.vb?`

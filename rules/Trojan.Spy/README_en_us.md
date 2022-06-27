@@ -12,9 +12,9 @@ Contents
 
 ## Trojan.Spy.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\ProgramData\*Cookie*.txt`
 - `Create` the file under the path `*\Users\*\AppData\Local\Temp\*Cookie*txt`

@@ -13,9 +13,9 @@ Contents
 
 ## Suspicious.ScriptHost.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\?script.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Windows\Sys?????\*.exe`
 - `Create` the file under the path `*.exe`
@@ -24,9 +24,9 @@ When the source process`*\?script.exe`initializes the following actions, HIPS mo
 
 ## Suspicious.ScriptHost.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
   

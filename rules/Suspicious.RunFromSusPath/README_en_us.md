@@ -16,9 +16,9 @@ Contents
 
 ## Suspicious.RunFromSusPath.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>`
 - `Execute` the program under the path `*\Users\*\AppData\>`
@@ -33,9 +33,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Recycler\*`
 - `Execute` the program under the path `*\$RECYCLE.BIN\*`
@@ -43,25 +43,25 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.C
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\ProgramData\>\>.exe`
 
 ## Suspicious.RunFromSusPath.D
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Sys?????\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
 
 ## Suspicious.RunFromSusPath.E
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   

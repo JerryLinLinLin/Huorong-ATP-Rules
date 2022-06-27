@@ -12,9 +12,9 @@ Contents
 
 ## Suspicious.ReadBrowserData.A
   
-Status: Disabled  
-Behavioral Description: 
+Status: Disabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should automatically block them.
 - `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
 - `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`

@@ -12,9 +12,9 @@ Contents
 
 ## Suspicious.SuspProcCallSysProc.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Users\*\AppData\>\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Windows\Sys?????\*.exe`
   

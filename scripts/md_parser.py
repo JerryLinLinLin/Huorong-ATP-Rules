@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-27 16:45:16
+# @Last Modified time: 2022-06-27 16:47:14
 
 import argparse
 import hashlib
@@ -187,8 +187,8 @@ def readme_en_us(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
         mdFile.new_header(level=2, title=each_rule["name"])
         mdFile.new_line(
             text="Status: " + ("Enabled" if int(each_rule["power"]) == 1 else "Disabled"))
-        mdFile.new_line(text="Behavioral Description: ")
-        mdFile.new_paragraph(text="When the source process`{src_proc}`initializes the following actions, {action}".format(
+        mdFile.new_paragraph(text="Behavioral Description: ")
+        mdFile.new_line(text="When the source process`{src_proc}`initializes the following actions, {action}".format(
             src_proc=each_rule["procname"], action="HIPS module should let the user decide them." if int(each_rule["power"]) == 1 else "HIPS module should automatically block them."))
         policy_list = list()
         for each_action in each_rule["policies"]:

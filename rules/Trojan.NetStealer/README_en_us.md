@@ -13,9 +13,9 @@ Contents
 
 ## Trojan.NetStealer.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\Microsoft.NET\Framework\>\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.txt`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\>.ini`
@@ -25,9 +25,9 @@ When the source process`*\Windows\Microsoft.NET\Framework\>\>`initializes the fo
 
 ## Trojan.NetStealer.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\>`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\>.ini`
   

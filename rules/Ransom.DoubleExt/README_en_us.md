@@ -13,9 +13,9 @@ Contents
 
 ## Ransom.DoubleExt.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*.docx.>`
 - `Create` the file under the path `*.xlsx.>`
@@ -26,9 +26,9 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Ransom.DoubleExt.B
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `>\Users\>\Pictures\*.jpg.>`
 - `Create` the file under the path `>\Users\>\Pictures\*.png.>`

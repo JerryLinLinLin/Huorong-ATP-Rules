@@ -12,9 +12,9 @@ Contents
 
 ## Suspicious.SysProcAddAutoRun.A
   
-Status: Enabled  
-Behavioral Description: 
+Status: Enabled
 
+Behavioral Description:   
 When the source process`*\Windows\*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
