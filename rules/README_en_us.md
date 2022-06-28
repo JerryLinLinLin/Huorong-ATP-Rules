@@ -198,7 +198,7 @@ When the source process`*\cmd.exe`initializes the following actions, HIPS module
 Status: Disabled
 
 Behavioral Description:   
-When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should automatically block them.
+When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\powershell.exe`
 
 ## Suspicious.PowerShell.B
@@ -219,7 +219,7 @@ When the source process`*\powershell.exe`initializes the following actions, HIPS
 Status: Disabled
 
 Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should automatically block them.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
 - `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
   
@@ -258,7 +258,7 @@ When the source process`*`initializes the following actions, HIPS module should 
 Status: Disabled
 
 Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should automatically block them.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\ProgramData\>\>.exe`
 
 ## Suspicious.RunFromSusPath.D
@@ -274,7 +274,7 @@ When the source process`*\Windows\Sys?????\>`initializes the following actions, 
 Status: Disabled
 
 Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should automatically block them.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   
 ***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***
