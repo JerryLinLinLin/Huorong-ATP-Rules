@@ -12,10 +12,10 @@ Contents
 
 ## Trojan.Nanocore
   
-Status: Disabled
+Status: Enabled
 
 Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should automatically block them.
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\run.dat`
   
-***rule.json hash: 8e0a16afc7e1b262b59238b529e2188d8bb0750bf737f2b2f764683394bd005d***
+***rule.json hash: f98c174a8ca5b5f4ee2eec9c03f4f3ccc66a2a4c538f6e1025e30eeebfe10963***

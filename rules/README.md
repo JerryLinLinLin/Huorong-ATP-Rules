@@ -185,7 +185,7 @@
   
 状态：未启用
 
-行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，自动阻止
+行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\powershell.exe`的程序进行**执行**操作
 
 ## Suspicious.PowerShell.B
@@ -204,7 +204,7 @@
   
 状态：未启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行**读取**操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行**读取**操作
   
@@ -240,7 +240,7 @@
   
 状态：未启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\ProgramData\>\>.exe`的程序进行**执行**操作
 
 ## Suspicious.RunFromSusPath.D
@@ -254,7 +254,7 @@
   
 状态：未启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
   
 ***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***
@@ -356,12 +356,12 @@
 
 ## Trojan.Nanocore
   
-状态：未启用
+状态：启用
 
-行为描述：源程序`*`做出以下操作时，自动阻止
+行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\run.dat`的文件进行**创建**操作
   
-***rule.json hash: 8e0a16afc7e1b262b59238b529e2188d8bb0750bf737f2b2f764683394bd005d***
+***rule.json hash: f98c174a8ca5b5f4ee2eec9c03f4f3ccc66a2a4c538f6e1025e30eeebfe10963***
 # Trojan.NetStealer
 
 ## Trojan.NetStealer.A

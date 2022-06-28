@@ -15,7 +15,7 @@
   
 状态：未启用
 
-行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，自动阻止
+行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\powershell.exe`的程序进行**执行**操作
 
 ## Suspicious.PowerShell.B
