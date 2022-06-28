@@ -16,7 +16,7 @@ Contents
 Status: Disabled
 
 Behavioral Description:   
-When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should automatically block them.
+When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\powershell.exe`
 
 ## Suspicious.PowerShell.B
