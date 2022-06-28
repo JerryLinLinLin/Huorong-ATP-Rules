@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2022-06-27 17:48:24
+# @Last Modified time: 2022-06-27 23:13:14
 
 import argparse
 import hashlib
@@ -113,7 +113,7 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
         mdFile.new_line(
             text="状态：" + ("启用" if int(each_rule["power"]) == 1 else "未启用"))
         mdFile.new_paragraph(text="行为描述：源程序`{src_proc}`做出以下操作时，{action}".format(
-            src_proc=each_rule["procname"], action="提示用户处理" if int(each_rule["power"]) == 1 else "自动阻止"))
+            src_proc=each_rule["procname"], action="提示用户处理" if int(each_rule["treatment"]) == 1 else "自动阻止"))
         policy_list = list()
         for each_action in each_rule["policies"]:
             policy_list.append("对路径为`{action_path}`的{type}进行**{action}**操作".format(action_path=each_action["res_path"], type=get_montype_string_zh_cn(
