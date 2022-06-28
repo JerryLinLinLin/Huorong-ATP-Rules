@@ -49,7 +49,7 @@
 * [Trojan.MshtaDownloader](#trojanmshtadownloader)
 	* [Trojan.MshtaDownloader.A](#trojanmshtadownloadera)
 * [Trojan.Nanocore](#trojannanocore)
-	* [Trojan.Nanocore](#trojannanocore)
+	* [Trojan.Nanocore.A](#trojannanocorea)
 * [Trojan.NetStealer](#trojannetstealer)
 	* [Trojan.NetStealer.A](#trojannetstealera)
 	* [Trojan.NetStealer.B](#trojannetstealerb)
@@ -354,14 +354,14 @@
 ***rule.json hash: 9af5a10aba8688c0759a59db43479ddd32558715cf3b6905531d9ef484e924a7***
 # Trojan.Nanocore
 
-## Trojan.Nanocore
+## Trojan.Nanocore.A
   
 状态：启用
 
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\run.dat`的文件进行**创建**操作
   
-***rule.json hash: f98c174a8ca5b5f4ee2eec9c03f4f3ccc66a2a4c538f6e1025e30eeebfe10963***
+***rule.json hash: dfee1a531ec4660d2f369489bf185f6d24a448670867d2e1d2f62ff86d4aefd3***
 # Trojan.NetStealer
 
 ## Trojan.NetStealer.A
