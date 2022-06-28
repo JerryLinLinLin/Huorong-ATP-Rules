@@ -5,7 +5,7 @@
         {
             "id": 256,
             "power": 1,
-            "name": "Trojan.Nanocore",
+            "name": "Trojan.Nanocore.A",
             "procname": "*",
             "treatment": 1,
             "policies": [
