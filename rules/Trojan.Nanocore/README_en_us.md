@@ -5,8 +5,17 @@
 Contents
 ========
 
-* [Template](#template)
+* [Trojan.Nanocore](#trojannanocore)
+	* [Trojan.Nanocore](#trojannanocore)
 
-# Template
+# Trojan.Nanocore
+
+## Trojan.Nanocore
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should automatically block them.
+- `Create` the file under the path `*\Users\*\AppData\Roaming\>\run.dat`
+  
+***rule.json hash: 8e0a16afc7e1b262b59238b529e2188d8bb0750bf737f2b2f764683394bd005d***

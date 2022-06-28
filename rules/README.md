@@ -48,6 +48,8 @@
 	* [Trojan.FakeSysProc.A](#trojanfakesysproca)
 * [Trojan.MshtaDownloader](#trojanmshtadownloader)
 	* [Trojan.MshtaDownloader.A](#trojanmshtadownloadera)
+* [Trojan.Nanocore](#trojannanocore)
+	* [Trojan.Nanocore](#trojannanocore)
 * [Trojan.NetStealer](#trojannetstealer)
 	* [Trojan.NetStealer.A](#trojannetstealera)
 	* [Trojan.NetStealer.B](#trojannetstealerb)
@@ -350,6 +352,16 @@
 - 对路径为`*\Users\*\AppData\*`的程序进行**执行**操作
   
 ***rule.json hash: 9af5a10aba8688c0759a59db43479ddd32558715cf3b6905531d9ef484e924a7***
+# Trojan.Nanocore
+
+## Trojan.Nanocore
+  
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，自动阻止
+- 对路径为`*\Users\*\AppData\Roaming\>\run.dat`的文件进行**创建**操作
+  
+***rule.json hash: 8e0a16afc7e1b262b59238b529e2188d8bb0750bf737f2b2f764683394bd005d***
 # Trojan.NetStealer
 
 ## Trojan.NetStealer.A
