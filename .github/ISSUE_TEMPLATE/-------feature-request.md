@@ -1,5 +1,5 @@
 ---
-name: 功能建议 | Feature request
+name: 功能建议 | Feature Request
 about: 新规则 OR 新功能 OR 其他 | Suggest an idea for this project
 title: "[feature]"
 labels: ''
