@@ -24,8 +24,6 @@ Contents
 * [Suspicious.PowerShell](#suspiciouspowershell)
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
-* [Suspicious.ReadBrowserData](#suspiciousreadbrowserdata)
-	* [Suspicious.ReadBrowserData.A](#suspiciousreadbrowserdataa)
 * [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
 	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
 	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
@@ -41,6 +39,10 @@ Contents
 	* [Suspicious.SuspProcCallSysProc.A](#suspicioussuspproccallsysproca)
 * [Suspicious.SysProcAddAutoRun](#suspicioussysprocaddautorun)
 	* [Suspicious.SysProcAddAutoRun.A](#suspicioussysprocaddautoruna)
+* [Telemetry.ActiveSetup](#telemetryactivesetup)
+	* [Telemetry.ActiveSetup.A](#telemetryactivesetupa)
+* [Telemetry.ReadBrowserData](#telemetryreadbrowserdata)
+	* [Telemetry.ReadBrowserData.A](#telemetryreadbrowserdataa)
 * [Template](#template)
 * [Trojan.CmstpDownloader](#trojancmstpdownloader)
 	* [Trojan.CmstpDownloader.A](#trojancmstpdownloadera)
@@ -212,18 +214,6 @@ When the source process`*\powershell.exe`initializes the following actions, HIPS
 - `Execute` the program under the path `*\Users\*\AppData\*`
   
 ***rule.json hash: b8719134d7772aa185965fa0b3f36db165a1ce1c5dd8533e41bbfe674f5f3437***
-# Suspicious.ReadBrowserData
-
-## Suspicious.ReadBrowserData.A
-  
-Status: Disabled
-
-Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should let the user decide them.
-- `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
-- `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
-  
-***rule.json hash: d13b8a311d712501d84b1645052ed84e506624c200a1f8a05ae649e07d258e76***
 # Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
@@ -335,6 +325,29 @@ When the source process`*\Windows\*`initializes the following actions, HIPS modu
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
   
 ***rule.json hash: b57855ef08d403a05d0d219b948fd32048c5f38ff07da0155ac2719ed510c2e9***
+# Telemetry.ActiveSetup
+
+## Telemetry.ActiveSetup.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create` the registry under the path `*\SOFTWARE*Microsoft\Active Setup\Installed Components*`
+  
+***rule.json hash: 25f31e649b656ea0a57e2bcf47eb507ac362fd3b168aeeeed1cbf6dd0fbeaeb9***
+# Telemetry.ReadBrowserData
+
+## Telemetry.ReadBrowserData.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
+- `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
+  
+***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***
 # Template
   
 ***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
