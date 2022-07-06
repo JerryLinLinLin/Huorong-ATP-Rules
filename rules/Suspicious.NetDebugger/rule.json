@@ -1,0 +1,20 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 256,
+            "power": 0,
+            "name": "Suspicious.NetDebugger.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 2,
+                    "action_type": 5,
+                    "res_path": "*\\SOFTWARE*Microsoft\\.NETFramework\\DbgManagedDebugge*"
+                }
+            ]
+        }
+    ]
+}
