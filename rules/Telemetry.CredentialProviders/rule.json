@@ -1,0 +1,25 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 256,
+            "power": 0,
+            "name": "Telemetry.CredentialProviders.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 2,
+                    "action_type": 5,
+                    "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Authentication\\PLAP Provider*"
+                },
+                {
+                    "montype": 2,
+                    "action_type": 5,
+                    "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Authentication\\Credential Provider*"
+                }
+            ]
+        }
+    ]
+}
