@@ -5,8 +5,16 @@
 目录
 ==
 
-* [Template](#template)
+* [Telemetry.ActiveSetup](#telemetryactivesetup)
+	* [Telemetry.ActiveSetup.A](#telemetryactivesetupa)
 
-# Template
+# Telemetry.ActiveSetup
+
+## Telemetry.ActiveSetup.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\SOFTWARE*Microsoft\Active Setup\Installed Components*`的注册表进行**创建**操作
+  
+***rule.json hash: 25f31e649b656ea0a57e2bcf47eb507ac362fd3b168aeeeed1cbf6dd0fbeaeb9***
