@@ -5,7 +5,7 @@
         {
             "id": 294,
             "power": 0,
-            "name": "Suspicious.ReadBrowserData.A",
+            "name": "Telemetry.ReadBrowserData.A",
             "procname": "*",
             "treatment": 1,
             "policies": [

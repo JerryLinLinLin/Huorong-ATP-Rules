@@ -26,28 +26,6 @@
               "treatment": 0
             }
           ],
-          "*\\Windows\\Microsoft.NET\\Framework\\>\\mscorsvw.exe": [
-            {
-              "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*",
-              "montype": 1,
-              "action_type": 2,
-              "treatment": 0
-            }
-          ],
-          "*\\Windows\\System32\\svchost.exe" : [
-            {
-              "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*",
-              "montype": 1,
-              "action_type": 2,
-              "treatment": 0
-            },
-            {
-              "res_path": "*\\Users\\*\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*",
-              "montype": 1,
-              "action_type": 2,
-              "treatment": 0
-            }
-          ],
           "*\\Windows\\explorer.exe" : [
             {
               "res_path": "*\\Users\\*\\AppData\\Local\\*\\User Data\\Default\\*",
