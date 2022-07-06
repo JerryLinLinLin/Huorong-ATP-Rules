@@ -5,8 +5,17 @@
 Contents
 ========
 
-* [Template](#template)
+* [Suspicious.AppCertDLLs](#suspiciousappcertdlls)
+	* [Suspicious.AppCertDLLs.A](#suspiciousappcertdllsa)
 
-# Template
+# Suspicious.AppCertDLLs
+
+## Suspicious.AppCertDLLs.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\System\CurrentControlSet\Control\Session Manager\*`
+  
+***rule.json hash: 5374f45048ea16f29e3ac22fc5e64ba6e5e655511033ac8d58ef78c8f8558e7e***

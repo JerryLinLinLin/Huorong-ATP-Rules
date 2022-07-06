@@ -19,8 +19,16 @@ Contents
 * [Ransom.DoubleExt](#ransomdoubleext)
 	* [Ransom.DoubleExt.A](#ransomdoubleexta)
 	* [Ransom.DoubleExt.B](#ransomdoubleextb)
+* [Suspicious.AppCertDLLs](#suspiciousappcertdlls)
+	* [Suspicious.AppCertDLLs.A](#suspiciousappcertdllsa)
+* [Suspicious.AppInitDLLs](#suspiciousappinitdlls)
+	* [Suspicious.AppInitDLLs.A](#suspiciousappinitdllsa)
 * [Suspicious.CommandPrompt](#suspiciouscommandprompt)
 	* [Suspicious.CommandPrompt.A](#suspiciouscommandprompta)
+* [Suspicious.NetDebugger](#suspiciousnetdebugger)
+	* [Suspicious.NetDebugger.A](#suspiciousnetdebuggera)
+* [Suspicious.NetWinAppXRT](#suspiciousnetwinappxrt)
+	* [Suspicious.NetWinAppXRT.A](#suspiciousnetwinappxrta)
 * [Suspicious.PowerShell](#suspiciouspowershell)
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
@@ -41,6 +49,8 @@ Contents
 	* [Suspicious.SysProcAddAutoRun.A](#suspicioussysprocaddautoruna)
 * [Telemetry.ActiveSetup](#telemetryactivesetup)
 	* [Telemetry.ActiveSetup.A](#telemetryactivesetupa)
+* [Telemetry.CredentialProviders](#telemetrycredentialproviders)
+	* [Telemetry.CredentialProviders.A](#telemetrycredentialprovidersa)
 * [Telemetry.ReadBrowserData](#telemetryreadbrowserdata)
 	* [Telemetry.ReadBrowserData.A](#telemetryreadbrowserdataa)
 * [Template](#template)
@@ -179,6 +189,28 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create` the file under the path `>\Users\>\Desktop\*.png.>`
   
 ***rule.json hash: 8afaf4ee0e8ea6328dd7102d76abcd442db651f497c2208e1e9e54e72bad7c4c***
+# Suspicious.AppCertDLLs
+
+## Suspicious.AppCertDLLs.A
+  
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\System\CurrentControlSet\Control\Session Manager\*`
+  
+***rule.json hash: 5374f45048ea16f29e3ac22fc5e64ba6e5e655511033ac8d58ef78c8f8558e7e***
+# Suspicious.AppInitDLLs
+
+## Suspicious.AppInitDLLs.A
+  
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\SOFTWARE*Microsoft\Windows NT\CurrentVersion\Windows\Appinit_Dll*`
+  
+***rule.json hash: 6fd0e8a0cc1edb410eaf010023f9d27aa7c7ff487492f67a7f92ccdbed6e8391***
 # Suspicious.CommandPrompt
 
 ## Suspicious.CommandPrompt.A
@@ -193,6 +225,28 @@ When the source process`*\cmd.exe`initializes the following actions, HIPS module
 - `Create` the file under the path `*.js`
   
 ***rule.json hash: ac6da01e160cfb9848cec158ee41f935786a5413aadca2f4bb2c9ef66fcce2cd***
+# Suspicious.NetDebugger
+
+## Suspicious.NetDebugger.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\SOFTWARE*Microsoft\.NETFramework\DbgManagedDebugge*`
+  
+***rule.json hash: 04ca56b228447f507b7f8e4bc012dfee5c97828c916b7513db6b61c24d14ed14***
+# Suspicious.NetWinAppXRT
+
+## Suspicious.NetWinAppXRT.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the file under the path `*\WinAppXRT.dll`
+  
+***rule.json hash: e929a5393844223a858a2db1aec518991e2d30f560a952a4066a5f69352cdf47***
 # Suspicious.PowerShell
 
 ## Suspicious.PowerShell.A
@@ -336,6 +390,18 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create` the registry under the path `*\SOFTWARE*Microsoft\Active Setup\Installed Components*`
   
 ***rule.json hash: 25f31e649b656ea0a57e2bcf47eb507ac362fd3b168aeeeed1cbf6dd0fbeaeb9***
+# Telemetry.CredentialProviders
+
+## Telemetry.CredentialProviders.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\PLAP Provider*`
+- `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`
+  
+***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***
 # Telemetry.ReadBrowserData
 
 ## Telemetry.ReadBrowserData.A
