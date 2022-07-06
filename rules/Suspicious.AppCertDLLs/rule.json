@@ -1,0 +1,20 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 256,
+            "power": 1,
+            "name": "Suspicious.AppCertDLLs.A",
+            "procname": "*",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 2,
+                    "action_type": 5,
+                    "res_path": "*\\System\\CurrentControlSet\\Control\\Session Manager\\*"
+                }
+            ]
+        }
+    ]
+}
