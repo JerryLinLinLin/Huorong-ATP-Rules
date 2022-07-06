@@ -66,6 +66,7 @@
 位于`scripts/`目录下，用于自动检查规则文件格式、导出/合并所有规则组，生成规则说明文档等，仅限于此规则目录结构。
 
 - `validate_rules.py` - 验证规则文件，基于此[schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema)
+
 ```
 usage: validate_rules.py [-h] --path PATH
 
@@ -75,6 +76,7 @@ optional arguments:
 ```
 
 - `merge_rules.py` - 将规则组合并为一个文件，方便导入。
+
 ```
 usage: merge_rules.py [-h] --path PATH --output OUTPUT
 
@@ -85,6 +87,7 @@ optional arguments:
 ```
 
 - `md_parser.py` - 生成规则文档。
+
 ```
 usage: md_parser.py [-h] --path PATH
 
