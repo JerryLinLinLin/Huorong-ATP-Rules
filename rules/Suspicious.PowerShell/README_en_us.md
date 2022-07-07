@@ -8,12 +8,13 @@ Contents
 * [Suspicious.PowerShell](#suspiciouspowershell)
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
+	* [Suspicious.PowerShell.C](#suspiciouspowershellc)
 
 # Suspicious.PowerShell
 
 ## Suspicious.PowerShell.A
   
-Status: Disabled
+Status: Enabled
 
 Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
@@ -25,8 +26,16 @@ Status: Enabled
 
 Behavioral Description:   
 When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
-- `Create` the registry under the path `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`
-- `Create` the file under the path `*.exe`
 - `Execute` the program under the path `*\Users\*\AppData\*`
+
+## Suspicious.PowerShell.C
   
-***rule.json hash: b8719134d7772aa185965fa0b3f36db165a1ce1c5dd8533e41bbfe674f5f3437***
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Write` the file under the path `*\WindowsPowerShell\v1.0\profile.ps1`
+- `Write` the file under the path `*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`
+- `Write` the file under the path `*\Documents\profile.ps1`
+  
+***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***

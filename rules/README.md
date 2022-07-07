@@ -32,6 +32,7 @@
 * [Suspicious.PowerShell](#suspiciouspowershell)
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
+	* [Suspicious.PowerShell.C](#suspiciouspowershellc)
 * [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
 	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
 	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
@@ -51,8 +52,16 @@
 	* [Telemetry.ActiveSetup.A](#telemetryactivesetupa)
 * [Telemetry.CredentialProviders](#telemetrycredentialproviders)
 	* [Telemetry.CredentialProviders.A](#telemetrycredentialprovidersa)
+* [Telemetry.LSAConfig](#telemetrylsaconfig)
+	* [Telemetry.LSAConfig.A](#telemetrylsaconfiga)
+* [Telemetry.PowerShell](#telemetrypowershell)
+	* [Telemetry.PowerShell.A](#telemetrypowershella)
+	* [Telemetry.PowerShell.B](#telemetrypowershellb)
+	* [Telemetry.PowerShell.C](#telemetrypowershellc)
 * [Telemetry.ReadBrowserData](#telemetryreadbrowserdata)
 	* [Telemetry.ReadBrowserData.A](#telemetryreadbrowserdataa)
+* [Telemetry.TerminalServer](#telemetryterminalserver)
+	* [Telemetry.TerminalServer.A](#telemetryterminalservera)
 * [Template](#template)
 * [Trojan.CmstpDownloader](#trojancmstpdownloader)
 	* [Trojan.CmstpDownloader.A](#trojancmstpdownloadera)
@@ -235,7 +244,7 @@
 
 ## Suspicious.PowerShell.A
   
-状态：未启用
+状态：启用
 
 行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\powershell.exe`的程序进行**执行**操作
@@ -245,11 +254,18 @@
 状态：启用
 
 行为描述：源程序`*\powershell.exe`做出以下操作时，提示用户处理
-- 对路径为`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`的注册表进行**创建**操作
-- 对路径为`*.exe`的文件进行**创建**操作
 - 对路径为`*\Users\*\AppData\*`的程序进行**执行**操作
+
+## Suspicious.PowerShell.C
   
-***rule.json hash: b8719134d7772aa185965fa0b3f36db165a1ce1c5dd8533e41bbfe674f5f3437***
+状态：启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\WindowsPowerShell\v1.0\profile.ps1`的文件进行**写入**操作
+- 对路径为`*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`的文件进行**写入**操作
+- 对路径为`*\Documents\profile.ps1`的文件进行**写入**操作
+  
+***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
 # Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
@@ -372,6 +388,41 @@
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`的注册表进行**创建、写入**操作
   
 ***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***
+# Telemetry.LSAConfig
+
+## Telemetry.LSAConfig.A
+  
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Control\Lsa`的注册表进行**创建、写入**操作
+- 对路径为`*\Control\Lsa*`的注册表进行**创建、写入**操作
+  
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
+# Telemetry.PowerShell
+
+## Telemetry.PowerShell.A
+  
+状态：未启用
+
+行为描述：源程序`*\powershell.exe`做出以下操作时，提示用户处理
+- 对路径为`*.exe`的文件进行**创建**操作
+
+## Telemetry.PowerShell.B
+  
+状态：未启用
+
+行为描述：源程序`*\powershell.exe`做出以下操作时，提示用户处理
+- 对路径为`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`的注册表进行**创建**操作
+
+## Telemetry.PowerShell.C
+  
+状态：未启用
+
+行为描述：源程序`*\powershell.exe`做出以下操作时，提示用户处理
+- 对路径为`\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ExecutionPolicy`的注册表进行**写入**操作
+  
+***rule.json hash: 6176d464860dad2aa05aac6d1bdd4d556618cc1fa09a68bc9aba16208d464613***
 # Telemetry.ReadBrowserData
 
 ## Telemetry.ReadBrowserData.A
@@ -383,6 +434,16 @@
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行**读取**操作
   
 ***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***
+# Telemetry.TerminalServer
+
+## Telemetry.TerminalServer.A
+  
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\InitialProgram`的注册表进行**写入**操作
+  
+***rule.json hash: 1b245341cbd4dc6c3457fef43ee9ab8ffc96738ea578ed2bda9981f86819490e***
 # Template
   
 ***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***

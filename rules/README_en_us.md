@@ -32,6 +32,7 @@ Contents
 * [Suspicious.PowerShell](#suspiciouspowershell)
 	* [Suspicious.PowerShell.A](#suspiciouspowershella)
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
+	* [Suspicious.PowerShell.C](#suspiciouspowershellc)
 * [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
 	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
 	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
@@ -51,8 +52,16 @@ Contents
 	* [Telemetry.ActiveSetup.A](#telemetryactivesetupa)
 * [Telemetry.CredentialProviders](#telemetrycredentialproviders)
 	* [Telemetry.CredentialProviders.A](#telemetrycredentialprovidersa)
+* [Telemetry.LSAConfig](#telemetrylsaconfig)
+	* [Telemetry.LSAConfig.A](#telemetrylsaconfiga)
+* [Telemetry.PowerShell](#telemetrypowershell)
+	* [Telemetry.PowerShell.A](#telemetrypowershella)
+	* [Telemetry.PowerShell.B](#telemetrypowershellb)
+	* [Telemetry.PowerShell.C](#telemetrypowershellc)
 * [Telemetry.ReadBrowserData](#telemetryreadbrowserdata)
 	* [Telemetry.ReadBrowserData.A](#telemetryreadbrowserdataa)
+* [Telemetry.TerminalServer](#telemetryterminalserver)
+	* [Telemetry.TerminalServer.A](#telemetryterminalservera)
 * [Template](#template)
 * [Trojan.CmstpDownloader](#trojancmstpdownloader)
 	* [Trojan.CmstpDownloader.A](#trojancmstpdownloadera)
@@ -251,7 +260,7 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.PowerShell.A
   
-Status: Disabled
+Status: Enabled
 
 Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
@@ -263,11 +272,19 @@ Status: Enabled
 
 Behavioral Description:   
 When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
-- `Create` the registry under the path `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`
-- `Create` the file under the path `*.exe`
 - `Execute` the program under the path `*\Users\*\AppData\*`
+
+## Suspicious.PowerShell.C
   
-***rule.json hash: b8719134d7772aa185965fa0b3f36db165a1ce1c5dd8533e41bbfe674f5f3437***
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Write` the file under the path `*\WindowsPowerShell\v1.0\profile.ps1`
+- `Write` the file under the path `*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`
+- `Write` the file under the path `*\Documents\profile.ps1`
+  
+***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
 # Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
@@ -402,6 +419,45 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`
   
 ***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***
+# Telemetry.LSAConfig
+
+## Telemetry.LSAConfig.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\Control\Lsa`
+- `Create, Write` the registry under the path `*\Control\Lsa*`
+  
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
+# Telemetry.PowerShell
+
+## Telemetry.PowerShell.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
+- `Create` the file under the path `*.exe`
+
+## Telemetry.PowerShell.B
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
+- `Create` the registry under the path `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\*`
+
+## Telemetry.PowerShell.C
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*\powershell.exe`initializes the following actions, HIPS module should let the user decide them.
+- `Write` the registry under the path `\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ExecutionPolicy`
+  
+***rule.json hash: 6176d464860dad2aa05aac6d1bdd4d556618cc1fa09a68bc9aba16208d464613***
 # Telemetry.ReadBrowserData
 
 ## Telemetry.ReadBrowserData.A
@@ -414,6 +470,17 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
   
 ***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***
+# Telemetry.TerminalServer
+
+## Telemetry.TerminalServer.A
+  
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Write` the registry under the path `*\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\InitialProgram`
+  
+***rule.json hash: 1b245341cbd4dc6c3457fef43ee9ab8ffc96738ea578ed2bda9981f86819490e***
 # Template
   
 ***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***

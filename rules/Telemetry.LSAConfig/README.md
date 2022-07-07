@@ -5,8 +5,17 @@
 目录
 ==
 
-* [Template](#template)
+* [Telemetry.LSAConfig](#telemetrylsaconfig)
+	* [Telemetry.LSAConfig.A](#telemetrylsaconfiga)
 
-# Template
+# Telemetry.LSAConfig
+
+## Telemetry.LSAConfig.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Control\Lsa`的注册表进行**创建、写入**操作
+- 对路径为`*\Control\Lsa*`的注册表进行**创建、写入**操作
+  
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***

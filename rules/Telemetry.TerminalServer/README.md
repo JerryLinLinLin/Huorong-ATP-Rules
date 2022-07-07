@@ -5,8 +5,16 @@
 目录
 ==
 
-* [Template](#template)
+* [Telemetry.TerminalServer](#telemetryterminalserver)
+	* [Telemetry.TerminalServer.A](#telemetryterminalservera)
 
-# Template
+# Telemetry.TerminalServer
+
+## Telemetry.TerminalServer.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\InitialProgram`的注册表进行**写入**操作
+  
+***rule.json hash: 1b245341cbd4dc6c3457fef43ee9ab8ffc96738ea578ed2bda9981f86819490e***

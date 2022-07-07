@@ -5,8 +5,18 @@
 Contents
 ========
 
-* [Template](#template)
+* [Telemetry.LSAConfig](#telemetrylsaconfig)
+	* [Telemetry.LSAConfig.A](#telemetrylsaconfiga)
 
-# Template
+# Telemetry.LSAConfig
+
+## Telemetry.LSAConfig.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\Control\Lsa`
+- `Create, Write` the registry under the path `*\Control\Lsa*`
+  
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
