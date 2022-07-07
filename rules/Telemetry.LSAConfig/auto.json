@@ -1,0 +1,20 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser_auto",
+    "data": {
+        "*\\Windows\\*":[
+            {
+                "res_path": "*\\Control\\Lsa",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            },
+            {
+                "res_path": "*\\Control\\Lsa*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ]
+    }
+}
