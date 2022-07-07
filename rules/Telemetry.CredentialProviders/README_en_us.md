@@ -5,8 +5,18 @@
 Contents
 ========
 
-* [Template](#template)
+* [Telemetry.CredentialProviders](#telemetrycredentialproviders)
+	* [Telemetry.CredentialProviders.A](#telemetrycredentialprovidersa)
 
-# Template
+# Telemetry.CredentialProviders
+
+## Telemetry.CredentialProviders.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\PLAP Provider*`
+- `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`
+  
+***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***

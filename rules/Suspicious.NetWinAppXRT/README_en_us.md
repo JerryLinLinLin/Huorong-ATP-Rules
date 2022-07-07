@@ -5,8 +5,17 @@
 Contents
 ========
 
-* [Template](#template)
+* [Suspicious.NetWinAppXRT](#suspiciousnetwinappxrt)
+	* [Suspicious.NetWinAppXRT.A](#suspiciousnetwinappxrta)
 
-# Template
+# Suspicious.NetWinAppXRT
+
+## Suspicious.NetWinAppXRT.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Disabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the file under the path `*\WinAppXRT.dll`
+  
+***rule.json hash: e929a5393844223a858a2db1aec518991e2d30f560a952a4066a5f69352cdf47***

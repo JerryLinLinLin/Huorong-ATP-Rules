@@ -5,8 +5,17 @@
 Contents
 ========
 
-* [Template](#template)
+* [Suspicious.AppInitDLLs](#suspiciousappinitdlls)
+	* [Suspicious.AppInitDLLs.A](#suspiciousappinitdllsa)
 
-# Template
+# Suspicious.AppInitDLLs
+
+## Suspicious.AppInitDLLs.A
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+Status: Enabled
+
+Behavioral Description:   
+When the source process`*`initializes the following actions, HIPS module should let the user decide them.
+- `Create, Write` the registry under the path `*\SOFTWARE*Microsoft\Windows NT\CurrentVersion\Windows\Appinit_Dll*`
+  
+***rule.json hash: 6fd0e8a0cc1edb410eaf010023f9d27aa7c7ff487492f67a7f92ccdbed6e8391***
