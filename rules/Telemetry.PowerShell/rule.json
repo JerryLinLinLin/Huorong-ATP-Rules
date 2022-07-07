@@ -1,0 +1,48 @@
+{
+    "ver": "5.0",
+    "tag": "hipsuser",
+    "data": [
+        {
+            "id": 240,
+            "power": 0,
+            "name": "Telemetry.PowerShell.A",
+            "procname": "*\\powershell.exe",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 1,
+                    "action_type": 1,
+                    "res_path": "*.exe"
+                }
+            ]
+        },
+        {
+            "id": 240,
+            "power": 0,
+            "name": "Telemetry.PowerShell.B",
+            "procname": "*\\powershell.exe",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 2,
+                    "action_type": 1,
+                    "res_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\*"
+                }
+            ]
+        },
+        {
+            "id": 240,
+            "power": 0,
+            "name": "Telemetry.PowerShell.C",
+            "procname": "*\\powershell.exe",
+            "treatment": 1,
+            "policies": [
+                {
+                    "montype": 2,
+                    "action_type": 4,
+                    "res_path": "\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy"
+                }
+            ]
+        }
+    ]
+}

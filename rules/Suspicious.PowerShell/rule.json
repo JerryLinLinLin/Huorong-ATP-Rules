@@ -24,16 +24,6 @@
             "treatment": 1,
             "policies": [
               {
-                "montype": 2,
-                "action_type": 1,
-                "res_path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\*"
-              },
-              {
-                "montype": 1,
-                "action_type": 1,
-                "res_path": "*.exe"
-              },
-              {
                 "montype": 0,
                 "action_type": 16,
                 "res_path": "*\\Users\\*\\AppData\\*"
