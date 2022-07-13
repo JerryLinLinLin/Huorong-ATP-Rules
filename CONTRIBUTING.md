@@ -14,6 +14,7 @@
     - `Ransom`
     - `Suspicious`
     - `Trojan`
+    - `Telmetry`
     - ...
 
 - 当规则组有针对的恶意软件家族时，优先使用恶意软件家族名命名，例如`Trojan.Remcos`代表针对Remcos家族的规则。使用行为描述时，以下词语需要缩写以避免名字过长：
@@ -43,6 +44,7 @@
   - `Ransom`
   - `Suspicious`
   - `Trojan`
+  - `Telmetry`
   - ...
 
 - When a rule group has a malware family to target, the name of the malware family is preferred, e.g. `Trojan.Remcos` stands for a rule targeting the Remcos family. When using behavior descriptions, the following terms need to be abbreviated to avoid long names.
