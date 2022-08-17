@@ -29,6 +29,8 @@
 
 - 例外项/自动处理规则请添加在对应的`auto.json`文件内。
 
+- Telemetry 为遥测组别，默认不开启。
+
 - 添加完新规则组后请运行Github Actions `Generate Documentation` 生成对应规则文档。
 
 # Development/Adding New Rules
@@ -58,6 +60,8 @@
 - Each rule is named by the `rule group name. [A-Z]`.
 
 - Exceptions/automatic rules should be added in the corresponding `auto.json` file.
+
+- Telemetry rule group is not enabled by default.
 
 - After adding the new rule group, please run Github Actions `Generate Documentation` to generate the corresponding rule file. 
 
