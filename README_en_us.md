@@ -18,7 +18,7 @@ Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™]
 - [Changelog](#changelog)
 - [Feedback/Contribution](#feedbackcontribution)
 
-## Install/Import rules
+## Install/Import Rules
 
 Download the [latest rule version](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest), unzip the file to get `Rule.json`, `Auto.json`. Open the main interface of Huorong -> Protection Center -> Advanced Protection -> Custom Rules, click the switch to enable, click the item -> Enter the advanced protection settings, in the custom rule settings interface -> Import -> Select `Rule.json` and in the Automatic processing settings interface -> Import -> Select `Auto.json`.
 
