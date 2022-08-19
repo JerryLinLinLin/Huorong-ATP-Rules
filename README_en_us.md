@@ -10,7 +10,7 @@
 
 Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™](https://attack.mitre.org/) and malware behavioral characteristics. It can detect, block and intercept all kinds of malware, [Advanced Persistent Threat (APT)](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81) attack vectors and attack paths, such as fileless attacks, exploit attacks, crypto-ransomware, etc. It is also highly scalable, maintainable and community developer friendly.
 
-- [Installation/Import Rules](#installimport-rules)
+- [Installation/Import Rules](#installimport-Rules)
 - [Beginner's Guide](#beginners-guide)
 - [Rules Content](#rules-content)
 - [Rules Directory](#rules-directory)
