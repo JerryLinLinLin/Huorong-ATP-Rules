@@ -5,7 +5,7 @@
 
 - 在`rules/`下有子文件夹`Template`，以此为模板添加新规则组。
 
-- 使用此 [Json Schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema) 确保规则文件格式正确
+- 使用此 [JSON Schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema) 确保规则文件格式正确
 
 - 规则组命名方式为`威胁类别.行为描述/病毒家族`。目前的威胁类别可分为：
     
@@ -37,7 +37,7 @@
 
 - Under `rules/` there is a subfolder `Template`, use this as a template to add new rule groups.
 
-- Use this [Json Schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema) to ensure that rule files are properly formatted
+- Use this [JSON Schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema) to ensure that rule files are properly formatted
 
 - The rule group naming scheme is `Threat Category. Behavior description/virus family`. The current threat categories can be classified as
 
