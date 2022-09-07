@@ -12,7 +12,7 @@
                 {
                     "montype": 2,
                     "action_type": 5,
-                    "res_path": "*\\System\\CurrentControlSet\\Control\\Session Manager\\*"
+                    "res_path": "*\\System\\CurrentControlSet\\Control\\Session Manager\\AppCertDLLs\\*"
                 }
             ]
         }
