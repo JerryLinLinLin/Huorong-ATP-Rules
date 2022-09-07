@@ -12,10 +12,10 @@ Contents
 
 ## Suspicious.NetWinAppXRT.A
   
-Status: Disabled
+Status: Enabled
 
 Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create, Write` the file under the path `*\WinAppXRT.dll`
   
-***rule.json hash: e929a5393844223a858a2db1aec518991e2d30f560a952a4066a5f69352cdf47***
+***rule.json hash: f4ad1d9a4fc9506d43c0e802b323c39414a8599d5241095efeba91abffb9d1ea***
