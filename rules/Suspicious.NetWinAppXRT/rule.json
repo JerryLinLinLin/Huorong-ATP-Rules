@@ -4,7 +4,7 @@
     "data": [
         {
             "id": 256,
-            "power": 0,
+            "power": 1,
             "name": "Suspicious.NetWinAppXRT.A",
             "procname": "*",
             "treatment": 1,
