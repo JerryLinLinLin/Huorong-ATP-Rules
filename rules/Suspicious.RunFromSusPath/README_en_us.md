@@ -5,14 +5,13 @@
 Contents
 ========
 
-* [Telemetry.RunFromSusPath](#telemetryrunfromsuspath)
+* [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
 	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
 	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
 	* [Suspicious.RunFromSusPath.C](#suspiciousrunfromsuspathc)
 	* [Suspicious.RunFromSusPath.D](#suspiciousrunfromsuspathd)
-	* [Suspicious.RunFromSusPath.E](#suspiciousrunfromsuspathe)
 
-# Telemetry.RunFromSusPath
+# Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
   
@@ -43,7 +42,7 @@ When the source process`*`initializes the following actions, HIPS module should 
 
 ## Suspicious.RunFromSusPath.C
   
-Status: Disabled
+Status: Enabled
 
 Behavioral Description:   
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
@@ -56,13 +55,5 @@ Status: Enabled
 Behavioral Description:   
 When the source process`*\Windows\Sys?????\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
-
-## Suspicious.RunFromSusPath.E
   
-Status: Disabled
-
-Behavioral Description:   
-When the source process`*`initializes the following actions, HIPS module should let the user decide them.
-- `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
-  
-***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***
+***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***

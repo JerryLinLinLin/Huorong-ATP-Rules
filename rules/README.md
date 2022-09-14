@@ -34,7 +34,10 @@
 	* [Suspicious.PowerShell.B](#suspiciouspowershellb)
 	* [Suspicious.PowerShell.C](#suspiciouspowershellc)
 * [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
-	* [Telemetry.RunFromSusPath.E](#telemetryrunfromsuspathe)
+	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
+	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
+	* [Suspicious.RunFromSusPath.C](#suspiciousrunfromsuspathc)
+	* [Suspicious.RunFromSusPath.D](#suspiciousrunfromsuspathd)
 * [Suspicious.ScriptHost](#suspiciousscripthost)
 	* [Suspicious.ScriptHost.A](#suspiciousscripthosta)
 	* [Suspicious.ScriptHost.B](#suspiciousscripthostb)
@@ -57,11 +60,7 @@
 * [Telemetry.ReadBrowserData](#telemetryreadbrowserdata)
 	* [Telemetry.ReadBrowserData.A](#telemetryreadbrowserdataa)
 * [Telemetry.RunFromSusPath](#telemetryrunfromsuspath)
-	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
-	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
-	* [Suspicious.RunFromSusPath.C](#suspiciousrunfromsuspathc)
-	* [Suspicious.RunFromSusPath.D](#suspiciousrunfromsuspathd)
-	* [Suspicious.RunFromSusPath.E](#suspiciousrunfromsuspathe)
+	* [Telemetry.RunFromSusPath.A](#telemetryrunfromsuspatha)
 * [Telemetry.TerminalServer](#telemetryterminalserver)
 	* [Telemetry.TerminalServer.A](#telemetryterminalservera)
 * [Template](#template)
@@ -270,14 +269,46 @@
 ***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
 # Suspicious.RunFromSusPath
 
-## Telemetry.RunFromSusPath.E
+## Suspicious.RunFromSusPath.A
   
-状态：未启用
+状态：启用
 
 行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Users\*\AppData\Roaming\>`的程序进行**执行**操作
+- 对路径为`*\Users\*\AppData\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\>`的程序进行**执行**操作
+- 对路径为`*\ProgramData\>`的程序进行**执行**操作
+- 对路径为`*\Program Files\>`的程序进行**执行**操作
+- 对路径为`*\Program Files (x86)\>`的程序进行**执行**操作
+- 对路径为`*\Users\*\AppData\Local\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\Documents\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\Documents\>\>`的程序进行**执行**操作
+- 对路径为`*\Users\Public\>.bat`的文件进行**读取**操作
+
+## Suspicious.RunFromSusPath.B
+  
+状态：启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Recycler\*`的程序进行**执行**操作
+- 对路径为`*\$RECYCLE.BIN\*`的程序进行**执行**操作
+- 对路径为`*\System Volume Information\*`的程序进行**执行**操作
+
+## Suspicious.RunFromSusPath.C
+  
+状态：启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\ProgramData\>\>.exe`的程序进行**执行**操作
+
+## Suspicious.RunFromSusPath.D
+  
+状态：启用
+
+行为描述：源程序`*\Windows\Sys?????\>`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
   
-***rule.json hash: ae7bf2ac35fb32eee6f78358c21c58b8e16d1e3204d61c29e3504a940ca0b6a1***
+***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***
 # Suspicious.ScriptHost
 
 ## Suspicious.ScriptHost.A
@@ -399,53 +430,14 @@
 ***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***
 # Telemetry.RunFromSusPath
 
-## Suspicious.RunFromSusPath.A
-  
-状态：启用
-
-行为描述：源程序`*`做出以下操作时，提示用户处理
-- 对路径为`*\Users\*\AppData\Roaming\>`的程序进行**执行**操作
-- 对路径为`*\Users\*\AppData\>`的程序进行**执行**操作
-- 对路径为`*\Users\>\>`的程序进行**执行**操作
-- 对路径为`*\ProgramData\>`的程序进行**执行**操作
-- 对路径为`*\Program Files\>`的程序进行**执行**操作
-- 对路径为`*\Program Files (x86)\>`的程序进行**执行**操作
-- 对路径为`*\Users\*\AppData\Local\>`的程序进行**执行**操作
-- 对路径为`*\Users\>\Documents\>`的程序进行**执行**操作
-- 对路径为`*\Users\>\Documents\>\>`的程序进行**执行**操作
-- 对路径为`*\Users\Public\>.bat`的文件进行**读取**操作
-
-## Suspicious.RunFromSusPath.B
-  
-状态：启用
-
-行为描述：源程序`*`做出以下操作时，提示用户处理
-- 对路径为`*\Recycler\*`的程序进行**执行**操作
-- 对路径为`*\$RECYCLE.BIN\*`的程序进行**执行**操作
-- 对路径为`*\System Volume Information\*`的程序进行**执行**操作
-
-## Suspicious.RunFromSusPath.C
-  
-状态：未启用
-
-行为描述：源程序`*`做出以下操作时，提示用户处理
-- 对路径为`*\ProgramData\>\>.exe`的程序进行**执行**操作
-
-## Suspicious.RunFromSusPath.D
-  
-状态：启用
-
-行为描述：源程序`*\Windows\Sys?????\>`做出以下操作时，提示用户处理
-- 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
-
-## Suspicious.RunFromSusPath.E
+## Telemetry.RunFromSusPath.A
   
 状态：未启用
 
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
   
-***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***
+***rule.json hash: 8e649f1c95f70ea514564927537534ec4e4d61a9dc322d163fff85aab12fd612***
 # Telemetry.TerminalServer
 
 ## Telemetry.TerminalServer.A
