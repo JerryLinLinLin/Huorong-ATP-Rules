@@ -5,16 +5,59 @@
 目录
 ==
 
-* [Suspicious.RunFromSusPath](#suspiciousrunfromsuspath)
-	* [Telemetry.RunFromSusPath.E](#telemetryrunfromsuspathe)
+* [Telemetry.RunFromSusPath](#telemetryrunfromsuspath)
+	* [Suspicious.RunFromSusPath.A](#suspiciousrunfromsuspatha)
+	* [Suspicious.RunFromSusPath.B](#suspiciousrunfromsuspathb)
+	* [Suspicious.RunFromSusPath.C](#suspiciousrunfromsuspathc)
+	* [Suspicious.RunFromSusPath.D](#suspiciousrunfromsuspathd)
+	* [Suspicious.RunFromSusPath.E](#suspiciousrunfromsuspathe)
 
-# Suspicious.RunFromSusPath
+# Telemetry.RunFromSusPath
 
-## Telemetry.RunFromSusPath.E
+## Suspicious.RunFromSusPath.A
+  
+状态：启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Users\*\AppData\Roaming\>`的程序进行**执行**操作
+- 对路径为`*\Users\*\AppData\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\>`的程序进行**执行**操作
+- 对路径为`*\ProgramData\>`的程序进行**执行**操作
+- 对路径为`*\Program Files\>`的程序进行**执行**操作
+- 对路径为`*\Program Files (x86)\>`的程序进行**执行**操作
+- 对路径为`*\Users\*\AppData\Local\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\Documents\>`的程序进行**执行**操作
+- 对路径为`*\Users\>\Documents\>\>`的程序进行**执行**操作
+- 对路径为`*\Users\Public\>.bat`的文件进行**读取**操作
+
+## Suspicious.RunFromSusPath.B
+  
+状态：启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\Recycler\*`的程序进行**执行**操作
+- 对路径为`*\$RECYCLE.BIN\*`的程序进行**执行**操作
+- 对路径为`*\System Volume Information\*`的程序进行**执行**操作
+
+## Suspicious.RunFromSusPath.C
+  
+状态：未启用
+
+行为描述：源程序`*`做出以下操作时，提示用户处理
+- 对路径为`*\ProgramData\>\>.exe`的程序进行**执行**操作
+
+## Suspicious.RunFromSusPath.D
+  
+状态：启用
+
+行为描述：源程序`*\Windows\Sys?????\>`做出以下操作时，提示用户处理
+- 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
+
+## Suspicious.RunFromSusPath.E
   
 状态：未启用
 
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
   
-***rule.json hash: ae7bf2ac35fb32eee6f78358c21c58b8e16d1e3204d61c29e3504a940ca0b6a1***
+***rule.json hash: 08f7e3dc7ada40ee0b6cce1ef341404eb3de0be6da37d852a0549a1c049944c2***
