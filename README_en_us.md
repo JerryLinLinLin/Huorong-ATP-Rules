@@ -11,10 +11,10 @@
 Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™](https://attack.mitre.org/) and malware behavioral characteristics. It can detect, block and intercept all kinds of malware, [Advanced Persistent Threat (APT)](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81) attack vectors and attack paths, such as fileless attacks, exploit attacks, crypto-ransomware, etc. It is also highly scalable, maintainable and community developer friendly.
 
 - [Installation/Import Rules](#installimport-rules)
-- [Beginner's Guide](#beginners-guide)
+- [Getting Started](#getting-started)
 - [Rules Content](#rules-content)
 - [Rules Directory](#rules-directory)
-- [Automation Scripts](#automation-scripts)
+- [Build Scripts](#build-scripts)
 - [Changelog](#changelog)
 - [Feedback/Contribution](#feedbackcontribution)
 
@@ -24,7 +24,7 @@ Download the [latest rule version](https://github.com/JerryLinLinLin/Huorong-ATP
 
 Please manually delete the old rules and re-import them when you update to a new version.
 
-## Beginner's Guide
+## Getting Started
 
 Import the rules as shown [in this figure](images/import_rules.jpg).
 
@@ -56,7 +56,7 @@ The directory structure is as follows
     │   └── README.md
     └── README.md
 
-## Automation Scripts
+## Build Scripts
 
 Located in the `scripts/` directory, it is used to automatically check the rule file format, export/merge all rule groups, generate rule description documents, etc. and is limited to this rule directory structure.
 
