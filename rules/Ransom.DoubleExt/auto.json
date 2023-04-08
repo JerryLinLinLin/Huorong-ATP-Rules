@@ -120,6 +120,22 @@
             "treatment": 0
           }
         ],
+        "*\\WPS Office\\*\\wps.exe": [
+          {
+            "res_path": "*.>.*",
+            "montype": 1,
+            "action_type": 1,
+            "treatment": 0
+          }
+        ],
+        "*\\WPS Office\\*\\wpscloudsvr.exe": [
+          {
+            "res_path": "*.>.*",
+            "montype": 1,
+            "action_type": 1,
+            "treatment": 0
+          }
+        ],
         "*\\Windows\\explorer.exe": [
           {
             "res_path": "*.>.*",

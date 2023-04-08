@@ -1,5 +1,14 @@
 {
     "ver": "5.0",
     "tag": "hipsuser_auto",
-    "data": {}
+    "data": {
+        "*\\Windows\\Sys?????\\svchost.exe" :[
+            {
+                "res_path": "*\\System\\CurrentControlSet\\Control\\Session Manager\\AppCertDLLs\\*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
+        ]
+    }
 }

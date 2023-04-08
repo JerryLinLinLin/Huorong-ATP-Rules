@@ -4,7 +4,7 @@
     "data": [
         {
             "id": 256,
-            "power": 1,
+            "power": 0,
             "name": "Suspicious.AppCertDLLs.A",
             "procname": "*",
             "treatment": 1,

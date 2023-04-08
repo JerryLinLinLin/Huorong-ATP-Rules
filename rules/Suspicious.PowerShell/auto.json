@@ -29,6 +29,14 @@
                 "action_type": 5,
                 "treatment": 0
             }
+        ],
+        "*\\Windows\\Sys?????\\cmd.exe" :[
+            {
+                "res_path": "*\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "montype": 0,
+                "action_type": 16,
+                "treatment": 0
+            }
         ]
     }
 }
