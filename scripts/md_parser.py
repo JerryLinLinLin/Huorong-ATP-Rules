@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-09 12:28:24
+# @Last Modified time: 2023-04-09 12:34:01
 
 import argparse
 import hashlib
@@ -215,7 +215,9 @@ def main(folder_path:str):
 
     mdFile_zh_cn.new_line("简体中文 | [English](/README_en_us.md)")
     mdFile_zh_cn.new_line()
+    mdFile_zh_cn.new_line()
     mdFile_en_us.new_line("[简体中文](/README.md) | English")
+    mdFile_en_us.new_line()
     mdFile_en_us.new_line()
 
     mdFile_zh_cn.create_marker("table of content")
@@ -232,10 +234,10 @@ def main(folder_path:str):
                 readme_en_us(path, rule_dict, None)
                 readme_en_us(path, rule_dict, mdFile_en_us)
 
-    mdFile_zh_cn.new_table_of_contents(table_title='目录', depth=2, marker="table of content")
+    mdFile_zh_cn.new_table_of_contents(table_title='目录', depth=2, marker="##--[table of content]--##")
     mdFile_zh_cn.create_md_file()
 
-    mdFile_en_us.new_table_of_contents(table_title='Contents', depth=2, marker="table of content")
+    mdFile_en_us.new_table_of_contents(table_title='Contents', depth=2, marker="##--[table of content]--##")
     mdFile_en_us.create_md_file()
 
 
