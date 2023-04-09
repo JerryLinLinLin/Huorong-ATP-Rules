@@ -3,7 +3,8 @@
 
   
 简体中文 | [English](/README_en_us.md)  
-##--[
+  
+
 目录
 ==
 
@@ -83,7 +84,7 @@
 	* [Trojan.Spy.A](#trojanspya)
 * [Trojan.StartupFolderMalDropper](#trojanstartupfoldermaldropper)
 	* [Trojan.StartupFolderMalDropper.A](#trojanstartupfoldermaldroppera)
-]--##
+
 # Exploit.MSOffice
 
 ## Exploit.MSOffice.A
