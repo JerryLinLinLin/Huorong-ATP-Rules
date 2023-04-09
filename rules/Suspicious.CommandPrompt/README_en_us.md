@@ -21,4 +21,5 @@ When the source process`*\cmd.exe`initializes the following actions, HIPS module
 - `Create` the file under the path `*.vb?`
 - `Create` the file under the path `*.js`
   
-***rule.json hash: ac6da01e160cfb9848cec158ee41f935786a5413aadca2f4bb2c9ef66fcce2cd***
+***rule.json hash: ac6da01e160cfb9848cec158ee41f935786a5413aadca2f4bb2c9ef66fcce2cd***  
+[简体中文](/README.md) | English

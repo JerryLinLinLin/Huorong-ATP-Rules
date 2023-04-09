@@ -19,4 +19,5 @@ When the source process`*\Windows\*`initializes the following actions, HIPS modu
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Run*`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`
   
-***rule.json hash: b57855ef08d403a05d0d219b948fd32048c5f38ff07da0155ac2719ed510c2e9***
+***rule.json hash: b57855ef08d403a05d0d219b948fd32048c5f38ff07da0155ac2719ed510c2e9***  
+[简体中文](/README.md) | English

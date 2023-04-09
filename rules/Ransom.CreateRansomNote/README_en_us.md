@@ -22,4 +22,5 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create` the file under the path `>\Users\*\AppData\>.txt`
 - `Create` the file under the path `>\Program Files\>.txt`
   
-***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***
+***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***  
+[简体中文](/README.md) | English
