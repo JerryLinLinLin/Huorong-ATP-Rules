@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-09 12:39:08
+# @Last Modified time: 2023-04-09 12:42:17
 
 import argparse
 import hashlib
@@ -213,10 +213,10 @@ def main(folder_path:str):
     mdFile_zh_cn = MdUtils(file_name=os.sep.join([folder_path, "README"]))
     mdFile_en_us = MdUtils(file_name=os.sep.join([folder_path, "README_en_us"]))
 
-    mdFile_zh_cn.new_line("简体中文 | [English]({})".format(os.sep.join([folder_path, "README_en_us"])))
+    mdFile_zh_cn.new_line("简体中文 | [English](README_en_us.md)")
     mdFile_zh_cn.new_line()
     mdFile_zh_cn.new_line()
-    mdFile_en_us.new_line("[简体中文]({}) | English".format(os.sep.join([folder_path, "README"])))
+    mdFile_en_us.new_line("[简体中文](README.md) | English")
     mdFile_en_us.new_line()
     mdFile_en_us.new_line()
 
