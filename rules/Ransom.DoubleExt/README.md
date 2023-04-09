@@ -33,4 +33,5 @@
 - 对路径为`>\Users\>\Desktop\*.jpg.>`的文件进行**创建**操作
 - 对路径为`>\Users\>\Desktop\*.png.>`的文件进行**创建**操作
   
-***rule.json hash: 8afaf4ee0e8ea6328dd7102d76abcd442db651f497c2208e1e9e54e72bad7c4c***
+***rule.json hash: 8afaf4ee0e8ea6328dd7102d76abcd442db651f497c2208e1e9e54e72bad7c4c***  
+简体中文 | [English](/README_en_us.md)

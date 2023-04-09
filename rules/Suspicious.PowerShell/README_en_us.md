@@ -38,4 +38,5 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Write` the file under the path `*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`
 - `Write` the file under the path `*\Documents\profile.ps1`
   
-***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
+***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***  
+[简体中文](/README.md) | English

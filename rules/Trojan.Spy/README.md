@@ -23,4 +23,5 @@
 - 对路径为`*\Users\*\AppData\Local\Temp\*passowrd*txt`的文件进行**读取**操作
 - 对路径为`*\Users\*\AppData\Roaming\>\>.jpeg`的文件进行**创建**操作
   
-***rule.json hash: 007f1ee31843571162c95ca83eb42cbc192ccdfe1268363c1a4cd4c96955b914***
+***rule.json hash: 007f1ee31843571162c95ca83eb42cbc192ccdfe1268363c1a4cd4c96955b914***  
+简体中文 | [English](/README_en_us.md)

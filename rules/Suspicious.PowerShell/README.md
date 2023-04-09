@@ -35,4 +35,5 @@
 - 对路径为`*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`的文件进行**写入**操作
 - 对路径为`*\Documents\profile.ps1`的文件进行**写入**操作
   
-***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
+***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***  
+简体中文 | [English](/README_en_us.md)

@@ -19,4 +19,5 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create, Write` the registry under the path `*\Control\Lsa`
 - `Create, Write` the registry under the path `*\Control\Lsa*`
   
-***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***  
+[简体中文](/README.md) | English
