@@ -1,6 +1,9 @@
 
 
 
+  
+简体中文 | [English](README_en_us.md)  
+  
 
 目录
 ==
@@ -18,5 +21,4 @@
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行**读取**操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行**读取**操作
   
-***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***  
-简体中文 | [English](/README_en_us.md)
+***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***

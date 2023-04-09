@@ -1,6 +1,9 @@
 
 
 
+  
+[简体中文](README.md) | English  
+  
 
 Contents
 ========
@@ -56,5 +59,4 @@ Behavioral Description:
 When the source process`*\Windows\Sys?????\>`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   
-***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***  
-[简体中文](/README.md) | English
+***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***

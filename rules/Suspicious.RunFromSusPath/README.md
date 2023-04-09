@@ -1,6 +1,9 @@
 
 
 
+  
+简体中文 | [English](README_en_us.md)  
+  
 
 目录
 ==
@@ -52,5 +55,4 @@
 行为描述：源程序`*\Windows\Sys?????\>`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行**执行**操作
   
-***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***  
-简体中文 | [English](/README_en_us.md)
+***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***

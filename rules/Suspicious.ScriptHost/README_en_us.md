@@ -1,6 +1,9 @@
 
 
 
+  
+[简体中文](README.md) | English  
+  
 
 Contents
 ========
@@ -30,5 +33,4 @@ Behavioral Description:
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
   
-***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***  
-[简体中文](/README.md) | English
+***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***

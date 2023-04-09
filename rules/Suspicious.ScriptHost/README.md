@@ -1,6 +1,9 @@
 
 
 
+  
+简体中文 | [English](README_en_us.md)  
+  
 
 目录
 ==
@@ -28,5 +31,4 @@
 行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\?script.exe`的程序进行**执行**操作
   
-***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***  
-简体中文 | [English](/README_en_us.md)
+***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***
