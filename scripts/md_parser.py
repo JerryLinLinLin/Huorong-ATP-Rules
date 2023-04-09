@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-09 12:45:45
+# @Last Modified time: 2023-04-09 12:47:03
 
 import argparse
 import hashlib
@@ -107,6 +107,10 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     if mdFile is None:
         isCumulative = False
         mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README"]))
+        mdFile.new_line("简体中文 | [English](README_en_us.md)")
+        mdFile.new_line()
+        mdFile.new_line()
+        mdFile.create_marker("table of content")
     mdFile.new_header(level=1, title=rule_set_name)
     for each_rule in rule_dict["data"]:
         mdFile.new_header(level=2, title=each_rule["name"])
@@ -123,11 +127,6 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
     if (isCumulative is False):
-        mdFile.new_line("简体中文 | [English](README_en_us.md)")
-        mdFile.new_line()
-        mdFile.new_line()
-        mdFile.create_marker("table of content")
-
         mdFile.new_table_of_contents(table_title='目录', depth=2, marker="##--[table of content]--##")
         mdFile.create_md_file()
 
@@ -187,6 +186,10 @@ def readme_en_us(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     if mdFile is None:
         isCumulative = False
         mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README_en_us"]))
+        mdFile.new_line("[简体中文](README.md) | English")
+        mdFile.new_line()
+        mdFile.new_line()
+        mdFile.create_marker("table of content")
     mdFile.new_header(level=1, title=rule_set_name)
     for each_rule in rule_dict["data"]:
         mdFile.new_header(level=2, title=each_rule["name"])
@@ -204,11 +207,6 @@ def readme_en_us(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
     if (isCumulative is False):
-        mdFile.new_line("[简体中文](README.md) | English")
-        mdFile.new_line()
-        mdFile.new_line()
-        mdFile.create_marker("table of content")
-        
         mdFile.new_table_of_contents(table_title='Contents', depth=2, marker="##--[table of content]--##")
         mdFile.create_md_file()
 
