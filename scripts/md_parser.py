@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-09 12:42:17
+# @Last Modified time: 2023-04-09 12:45:45
 
 import argparse
 import hashlib
@@ -123,8 +123,12 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
     if (isCumulative is False):
-        mdFile.new_line("简体中文 | [English](/README_en_us.md)")
-        mdFile.new_table_of_contents(table_title='目录', depth=2)
+        mdFile.new_line("简体中文 | [English](README_en_us.md)")
+        mdFile.new_line()
+        mdFile.new_line()
+        mdFile.create_marker("table of content")
+
+        mdFile.new_table_of_contents(table_title='目录', depth=2, marker="##--[table of content]--##")
         mdFile.create_md_file()
 
 def get_action_type_string_en_us(action_type: int) -> str:
@@ -200,8 +204,12 @@ def readme_en_us(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
     if (isCumulative is False):
-        mdFile.new_line("[简体中文](/README.md) | English")
-        mdFile.new_table_of_contents(table_title='Contents', depth=2)
+        mdFile.new_line("[简体中文](README.md) | English")
+        mdFile.new_line()
+        mdFile.new_line()
+        mdFile.create_marker("table of content")
+        
+        mdFile.new_table_of_contents(table_title='Contents', depth=2, marker="##--[table of content]--##")
         mdFile.create_md_file()
 
 def main(folder_path:str):
