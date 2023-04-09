@@ -2,7 +2,7 @@
 
 
   
-简体中文 | [English](rules/README_en_us)  
+简体中文 | [English](README_en_us.md)  
   
 
 目录
