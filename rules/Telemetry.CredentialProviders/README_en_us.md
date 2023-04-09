@@ -1,6 +1,9 @@
 
 
 
+  
+[简体中文](README.md) | English  
+  
 
 Contents
 ========
@@ -19,5 +22,4 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\PLAP Provider*`
 - `Create, Write` the registry under the path `*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`
   
-***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***  
-[简体中文](/README.md) | English
+***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***

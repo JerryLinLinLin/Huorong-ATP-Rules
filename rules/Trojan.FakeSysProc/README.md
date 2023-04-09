@@ -1,6 +1,9 @@
 
 
 
+  
+简体中文 | [English](README_en_us.md)  
+  
 
 目录
 ==
@@ -22,5 +25,4 @@
 - 对路径为`*\csrss.exe`的程序进行**执行**操作
 - 对路径为`*\smss.exe`的程序进行**执行**操作
   
-***rule.json hash: 050c9912a384d8858c1f745894d9172ff45ef8a04c03a3fa7b57f02c8a0634da***  
-简体中文 | [English](/README_en_us.md)
+***rule.json hash: 050c9912a384d8858c1f745894d9172ff45ef8a04c03a3fa7b57f02c8a0634da***

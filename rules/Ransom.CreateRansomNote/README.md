@@ -1,6 +1,9 @@
 
 
 
+  
+简体中文 | [English](README_en_us.md)  
+  
 
 目录
 ==
@@ -21,5 +24,4 @@
 - 对路径为`>\Users\*\AppData\>.txt`的文件进行**创建**操作
 - 对路径为`>\Program Files\>.txt`的文件进行**创建**操作
   
-***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***  
-简体中文 | [English](/README_en_us.md)
+***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***

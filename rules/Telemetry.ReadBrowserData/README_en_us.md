@@ -1,6 +1,9 @@
 
 
 
+  
+[简体中文](README.md) | English  
+  
 
 Contents
 ========
@@ -19,5 +22,4 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Read` the file under the path `*\Users\*\AppData\Local\*\User Data\Default\*`
 - `Read` the file under the path `*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`
   
-***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***  
-[简体中文](/README.md) | English
+***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***

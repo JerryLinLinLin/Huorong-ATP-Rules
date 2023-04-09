@@ -1,6 +1,9 @@
 
 
 
+  
+[简体中文](README.md) | English  
+  
 
 Contents
 ========
@@ -24,5 +27,4 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Read` the file under the path `*\Users\*\AppData\Local\Temp\*passowrd*txt`
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\>.jpeg`
   
-***rule.json hash: 007f1ee31843571162c95ca83eb42cbc192ccdfe1268363c1a4cd4c96955b914***  
-[简体中文](/README.md) | English
+***rule.json hash: 007f1ee31843571162c95ca83eb42cbc192ccdfe1268363c1a4cd4c96955b914***
