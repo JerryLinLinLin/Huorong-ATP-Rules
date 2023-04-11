@@ -1,4 +1,4 @@
-[简体中文](/README.md) | English
+[简体中文](/README.md) | [繁體中文](/README_zh_tw.md) | English
 
 <h1 align="center"> Huorong Advanced Threat Protection Rules</h1>
 

@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-09 12:51:37
+# @Last Modified time: 2023-04-10 21:54:20
 
 import argparse
 import hashlib
@@ -107,7 +107,7 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     if mdFile is None:
         isCumulative = False
         mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README"]))
-        mdFile.new_line("简体中文 | [English](README_en_us.md)")
+        mdFile.new_line("简体中文 | [繁體中文](README_zh_tw.md) | [English](README_en_us.md)")
         mdFile.new_line()
         mdFile.new_line()
         mdFile.create_marker("table of content")
@@ -128,6 +128,85 @@ def readme_zh_cn(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
         _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
     if (isCumulative is False):
         mdFile.new_table_of_contents(table_title='目录', depth=2, marker="##--[table of content]--##")
+        mdFile.create_md_file()
+
+def get_action_type_string_zh_tw(action_type: int) -> str:
+    """zh_cn: Get action type string description
+
+    Args:
+        action_type (int): action type int in a policy
+
+    Returns:
+        str: string description
+    """
+    action_type_dict = get_action_type_dict(action_type)
+    action_type_string = str()
+    action_type_string = action_type_string + \
+        ("建立、" if action_type_dict["Create"] == 1 else "")
+    action_type_string = action_type_string + \
+        ("讀取、" if action_type_dict["Read"] == 1 else "")
+    action_type_string = action_type_string + \
+        ("寫入、" if action_type_dict["Write"] == 1 else "")
+    action_type_string = action_type_string + \
+        ("刪除、" if action_type_dict["Delete"] == 1 else "")
+    action_type_string = action_type_string + \
+        ("執行、" if action_type_dict["Execute"] == 1 else "")
+    action_type_string = action_type_string[0:len(action_type_string) - 1]
+    return action_type_string
+
+
+def get_montype_string_zh_tw(montype: int) -> str:
+    """zh_cn: Get montype string description
+
+    Args:
+        montype (int): montype int in a policy
+
+    Returns:
+        str: string description
+    """
+    if (montype == 0):
+        return "程式"
+    if (montype == 1):
+        return "檔案"
+    if (montype == 2):
+        return "登錄檔"
+
+
+def readme_zh_tw(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
+    """zh_cn: Generate readme for each ruleset, option for generate sum readme
+
+    Args:
+        rule_set_path (str): current rule set path
+        rule_dict (dict): json content of a rule set
+        mdFile (MdUtils): pass if cumulative, otherwise pass None
+    """
+    rule_set_name = str(rule_set_path)[str(rule_set_path).rindex(
+        os.path.sep) + 1:len(str(rule_set_path))]
+    isCumulative = True
+    if mdFile is None:
+        isCumulative = False
+        mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README_zh_tw"]))
+        mdFile.new_line("[简体中文](README.md) | 繁體中文 | [English](README_en_us.md)")
+        mdFile.new_line()
+        mdFile.new_line()
+        mdFile.create_marker("table of content")
+    mdFile.new_header(level=1, title=rule_set_name)
+    for each_rule in rule_dict["data"]:
+        mdFile.new_header(level=2, title=each_rule["name"])
+        mdFile.new_line(
+            text="狀態：" + ("啟用" if int(each_rule["power"]) == 1 else "未啟用"))
+        mdFile.new_paragraph(text="行為描述：源程式`{src_proc}`做出以下操作時，{action}".format(
+            src_proc=each_rule["procname"], action="提示使用者處理" if int(each_rule["treatment"]) == 1 else "自動阻止"))
+        policy_list = list()
+        for each_action in each_rule["policies"]:
+            policy_list.append("對路徑為`{action_path}`的{type}進行`{action}`操作".format(action_path=each_action["res_path"], type=get_montype_string_zh_cn(
+                each_action["montype"]), action=get_action_type_string_zh_cn(each_action["action_type"])))
+        mdFile.new_list(policy_list)
+
+    mdFile.new_line(text="rule.json hash: {_sha256}".format(
+        _sha256=get_file_sha256(os.path.join(rule_set_path, "rule.json"))), bold_italics_code='bi')
+    if (isCumulative is False):
+        mdFile.new_table_of_contents(table_title='目錄', depth=2, marker="##--[table of content]--##")
         mdFile.create_md_file()
 
 def get_action_type_string_en_us(action_type: int) -> str:
@@ -186,7 +265,7 @@ def readme_en_us(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
     if mdFile is None:
         isCumulative = False
         mdFile = MdUtils(file_name=os.sep.join([rule_set_path, "README_en_us"]))
-        mdFile.new_line("[简体中文](README.md) | English")
+        mdFile.new_line("[简体中文](README.md) | [繁體中文](README_zh_tw.md) | English")
         mdFile.new_line()
         mdFile.new_line()
         mdFile.create_marker("table of content")
@@ -217,12 +296,16 @@ def main(folder_path:str):
         folder_path (str): rule folder
     """
     mdFile_zh_cn = MdUtils(file_name=os.sep.join([folder_path, "README"]))
+    mdFile_zh_tw = MdUtils(file_name=os.sep.join([folder_path, "README_zh_tw"]))
     mdFile_en_us = MdUtils(file_name=os.sep.join([folder_path, "README_en_us"]))
 
-    mdFile_zh_cn.new_line("简体中文 | [English](README_en_us.md)")
+    mdFile_zh_cn.new_line("简体中文 | [繁體中文](README_zh_tw.md) | [English](README_en_us.md)")
     mdFile_zh_cn.new_line()
     mdFile_zh_cn.new_line()
-    mdFile_en_us.new_line("[简体中文](README.md) | English")
+    mdFile_zh_tw.new_line("[简体中文](README.md) | 繁體中文 | [English](README_en_us.md)")
+    mdFile_zh_tw.new_line()
+    mdFile_zh_tw.new_line()
+    mdFile_en_us.new_line("[简体中文](README.md) | [繁體中文](README_zh_tw.md) | English")
     mdFile_en_us.new_line()
     mdFile_en_us.new_line()
 
@@ -237,11 +320,17 @@ def main(folder_path:str):
                 readme_zh_cn(path, rule_dict, None)
                 readme_zh_cn(path, rule_dict, mdFile_zh_cn)
 
+                readme_zh_tw(path, rule_dict, None)
+                readme_zh_tw(path, rule_dict, mdFile_zh_tw)
+
                 readme_en_us(path, rule_dict, None)
                 readme_en_us(path, rule_dict, mdFile_en_us)
 
     mdFile_zh_cn.new_table_of_contents(table_title='目录', depth=2, marker="##--[table of content]--##")
     mdFile_zh_cn.create_md_file()
+
+    mdFile_zh_tw.new_table_of_contents(table_title='目錄', depth=2, marker="##--[table of content]--##")
+    mdFile_zh_tw.create_md_file()
 
     mdFile_en_us.new_table_of_contents(table_title='Contents', depth=2, marker="##--[table of content]--##")
     mdFile_en_us.create_md_file()

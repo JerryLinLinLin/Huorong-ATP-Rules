@@ -1,4 +1,4 @@
-简体中文 | [English](/README_en_us.md)
+简体中文 | [繁體中文](/README_zh_tw.md) | [English](/README_en_us.md)
 
 <h1 align="center">火绒高级威胁防护规则</h1>
 
