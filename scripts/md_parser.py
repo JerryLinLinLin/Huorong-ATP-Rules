@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-10 21:54:20
+# @Last Modified time: 2023-04-10 21:59:40
 
 import argparse
 import hashlib
@@ -310,6 +310,7 @@ def main(folder_path:str):
     mdFile_en_us.new_line()
 
     mdFile_zh_cn.create_marker("table of content")
+    mdFile_zh_tw.create_marker("table of content")
     mdFile_en_us.create_marker("table of content")
 
     for path, dirs, files in sorted(os.walk(folder_path)):
