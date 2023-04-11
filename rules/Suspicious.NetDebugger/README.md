@@ -20,4 +20,4 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\SOFTWARE*Microsoft\.NETFramework\DbgManagedDebugge*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 69a78ae8fed5bc9bcbb68eae9c549fcf9ac68e5aaeb26a2a0639866dbaf5d8d6***
+***rule.json hash: 8dafeaa565c7c02bff7bc9dd9a27155f95ad5958d3259a576797ea797fafb0c8***

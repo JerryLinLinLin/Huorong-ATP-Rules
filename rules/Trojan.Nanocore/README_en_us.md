@@ -21,4 +21,4 @@ Behavioral Description:
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the file under the path `*\Users\*\AppData\Roaming\>\run.dat`
   
-***rule.json hash: dfee1a531ec4660d2f369489bf185f6d24a448670867d2e1d2f62ff86d4aefd3***
+***rule.json hash: 7b2e1d410b22e9086de4bfa8882b43796c60fbe5efb2bd8af010d7fafd0893ca***

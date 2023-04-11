@@ -21,4 +21,4 @@ Behavioral Description:
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Create` the registry under the path `*\SOFTWARE*Microsoft\Active Setup\Installed Components*`
   
-***rule.json hash: 25f31e649b656ea0a57e2bcf47eb507ac362fd3b168aeeeed1cbf6dd0fbeaeb9***
+***rule.json hash: 13861bde9ed981f5012cc0fbb6f4d28ac50163d296043697ccf800f8e1784ada***

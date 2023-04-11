@@ -23,4 +23,4 @@
 - 对路径为`*.dll`的文件进行`创建`操作
 - 对路径为`*\Users\*\AppData\*`的程序进行`执行`操作
   
-***rule.json hash: 9af5a10aba8688c0759a59db43479ddd32558715cf3b6905531d9ef484e924a7***
+***rule.json hash: 892d5b0994e53705cef82d97b0724d4c867cd9b36181fdb896a680319342e388***

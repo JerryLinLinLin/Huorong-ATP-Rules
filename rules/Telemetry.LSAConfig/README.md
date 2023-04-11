@@ -21,4 +21,4 @@
 - 对路径为`*\Control\Lsa`的注册表进行`创建、写入`操作
 - 对路径为`*\Control\Lsa*`的注册表进行`创建、写入`操作
   
-***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
+***rule.json hash: 1e2d9f278a99ba6eba9d9c27f5ea5ab9a386228c74964f0290559a1256166d9d***

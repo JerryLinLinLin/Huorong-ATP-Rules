@@ -21,4 +21,4 @@
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Run*`的注册表进行`创建、写入`操作
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`的文件进行`创建`操作
   
-***rule.json hash: b57855ef08d403a05d0d219b948fd32048c5f38ff07da0155ac2719ed510c2e9***
+***rule.json hash: b616ca54c5a8095a7189004d17c0fce2bdc47ead11d3a7151d6658b00a431fcf***

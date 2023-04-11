@@ -23,4 +23,4 @@
 - 对路径为`*.vb?`的文件进行`创建`操作
 - 对路径为`*.js`的文件进行`创建`操作
   
-***rule.json hash: ac6da01e160cfb9848cec158ee41f935786a5413aadca2f4bb2c9ef66fcce2cd***
+***rule.json hash: e62bc0757952c536054b872cac6a0ab7773edb697cd0a32dc824ab4246d53190***

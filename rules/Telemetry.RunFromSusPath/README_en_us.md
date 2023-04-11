@@ -21,4 +21,4 @@ Behavioral Description:
 When the source process`*`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\Users\*\AppData\Roaming\>\>.exe`
   
-***rule.json hash: 8e649f1c95f70ea514564927537534ec4e4d61a9dc322d163fff85aab12fd612***
+***rule.json hash: 8b5b19e3835453960e36607f095ce6353fa52bd88044083277e2627f7174209a***

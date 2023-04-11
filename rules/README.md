@@ -151,7 +151,7 @@
 行为描述：源程序`*\EQNEDT32.EXE`做出以下操作时，提示用户处理
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Run*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 11a6f7f126334cff29ddfdc485905a1c4ba3aec0f7f911e203980f34cb4ce62c***
+***rule.json hash: 0b95bbddefa3f3c899c788551a690bee3417d706ccb99d71c30931b82532d141***
 # Ransom.CreateRansomNote
 
 ## Ransom.CreateRansomNote.A
@@ -165,7 +165,7 @@
 - 对路径为`>\Users\*\AppData\>.txt`的文件进行`创建`操作
 - 对路径为`>\Program Files\>.txt`的文件进行`创建`操作
   
-***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***
+***rule.json hash: c2c8db5cd47d81f8a5f0d961cc8c86cd9bf327106b678a8370b38d6e50963444***
 # Ransom.DoubleExt
 
 ## Ransom.DoubleExt.A
@@ -190,7 +190,7 @@
 - 对路径为`>\Users\>\Desktop\*.jpg.>`的文件进行`创建`操作
 - 对路径为`>\Users\>\Desktop\*.png.>`的文件进行`创建`操作
   
-***rule.json hash: 8afaf4ee0e8ea6328dd7102d76abcd442db651f497c2208e1e9e54e72bad7c4c***
+***rule.json hash: e5f5fd0249fcb5415f8445a356cf9b8d1b081981b6bbe3ce8d4e7b3052fd799a***
 # Suspicious.AppCertDLLs
 
 ## Suspicious.AppCertDLLs.A
@@ -200,7 +200,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\System\CurrentControlSet\Control\Session Manager\AppCertDLLs\*`的注册表进行`创建、写入`操作
   
-***rule.json hash: dfdff9349d60a3a7d57355d0e0a7e20b7da9997568cf228a647f1a94f2db6ec0***
+***rule.json hash: b7bddf3cc616ddeef545ba031f67f4e660eeee8f8baf211ed058c51d5b5ddb27***
 # Suspicious.AppInitDLLs
 
 ## Suspicious.AppInitDLLs.A
@@ -210,7 +210,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\SOFTWARE*Microsoft\Windows NT\CurrentVersion\Windows\Appinit_Dll*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 6fd0e8a0cc1edb410eaf010023f9d27aa7c7ff487492f67a7f92ccdbed6e8391***
+***rule.json hash: cba6993d469ccd5b83618066036bce299790aea826ebde01cdbc16efb862d101***
 # Suspicious.CommandPrompt
 
 ## Suspicious.CommandPrompt.A
@@ -223,7 +223,7 @@
 - 对路径为`*.vb?`的文件进行`创建`操作
 - 对路径为`*.js`的文件进行`创建`操作
   
-***rule.json hash: ac6da01e160cfb9848cec158ee41f935786a5413aadca2f4bb2c9ef66fcce2cd***
+***rule.json hash: e62bc0757952c536054b872cac6a0ab7773edb697cd0a32dc824ab4246d53190***
 # Suspicious.NetDebugger
 
 ## Suspicious.NetDebugger.A
@@ -233,7 +233,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\SOFTWARE*Microsoft\.NETFramework\DbgManagedDebugge*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 69a78ae8fed5bc9bcbb68eae9c549fcf9ac68e5aaeb26a2a0639866dbaf5d8d6***
+***rule.json hash: 8dafeaa565c7c02bff7bc9dd9a27155f95ad5958d3259a576797ea797fafb0c8***
 # Suspicious.NetWinAppXRT
 
 ## Suspicious.NetWinAppXRT.A
@@ -243,7 +243,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\WinAppXRT.dll`的文件进行`创建、写入`操作
   
-***rule.json hash: f4ad1d9a4fc9506d43c0e802b323c39414a8599d5241095efeba91abffb9d1ea***
+***rule.json hash: 854d05545961e7d83d1f1d74614dae0589255c0542306eb3f4716647665ab8aa***
 # Suspicious.PowerShell
 
 ## Suspicious.PowerShell.A
@@ -269,7 +269,7 @@
 - 对路径为`*\WindowsPowerShell\v1.0\Microsoft.PowerShell*profile.ps1`的文件进行`写入`操作
 - 对路径为`*\Documents\profile.ps1`的文件进行`写入`操作
   
-***rule.json hash: 8407b3ae9312f1ebc1145986020e3ff3cd72543e98e6ded29b064a7ccf875ea8***
+***rule.json hash: 1768d205c6d4a0c6794d1933f20f5b43f306159d13c799fb8b7360c91372757a***
 # Suspicious.RunFromSusPath
 
 ## Suspicious.RunFromSusPath.A
@@ -311,7 +311,7 @@
 行为描述：源程序`*\Windows\Sys?????\>`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行`执行`操作
   
-***rule.json hash: 0ce318e7bf946e22f9b9bc6bb13188f0e1fc43c42d10a7699f0d4a0c6af16cb7***
+***rule.json hash: 365f46a07ea3328aabbec53fbbd02ca27418a21bd8c4b5ac36535f678d509940***
 # Suspicious.ScriptHost
 
 ## Suspicious.ScriptHost.A
@@ -331,7 +331,7 @@
 行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\?script.exe`的程序进行`执行`操作
   
-***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***
+***rule.json hash: d2705aeab053e2c7a8fb7a2a57bd21c0378b71cce1c8b9403b89c3e7941abf12***
 # Suspicious.SuspProcAddAutoRun
 
 ## Suspicious.SuspProcAddAutoRun.A
@@ -342,7 +342,7 @@
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Run*`的注册表进行`创建、写入`操作
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`的文件进行`创建`操作
   
-***rule.json hash: 4aa4a4bcd0c6ecdd91d95954e534c4cd844dcde11960cdfcafb4d6169b081ca2***
+***rule.json hash: 44c2865460b206ad160babc1a7db46f5150601c4b4f3ac30fadb8598e27ad1ad***
 # Suspicious.SuspProcCallSysProc
 
 ## Suspicious.SuspProcCallSysProc.A
@@ -352,7 +352,7 @@
 行为描述：源程序`*\Users\*\AppData\>\>\>`做出以下操作时，提示用户处理
 - 对路径为`*\Windows\Sys?????\*.exe`的程序进行`执行`操作
   
-***rule.json hash: e89457383d24e328b7690300d5f3bf253909e57adf4cce5d0069c637a708ad35***
+***rule.json hash: 8976ebf9e98afb7f6c1285c15f2a65f5a5a6bfe826f1818fda1b0929cf0a9a47***
 # Suspicious.SysProcAddAutoRun
 
 ## Suspicious.SysProcAddAutoRun.A
@@ -363,7 +363,7 @@
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Run*`的注册表进行`创建、写入`操作
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*`的文件进行`创建`操作
   
-***rule.json hash: b57855ef08d403a05d0d219b948fd32048c5f38ff07da0155ac2719ed510c2e9***
+***rule.json hash: b616ca54c5a8095a7189004d17c0fce2bdc47ead11d3a7151d6658b00a431fcf***
 # Telemetry.ActiveSetup
 
 ## Telemetry.ActiveSetup.A
@@ -373,7 +373,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\SOFTWARE*Microsoft\Active Setup\Installed Components*`的注册表进行`创建`操作
   
-***rule.json hash: 25f31e649b656ea0a57e2bcf47eb507ac362fd3b168aeeeed1cbf6dd0fbeaeb9***
+***rule.json hash: 13861bde9ed981f5012cc0fbb6f4d28ac50163d296043697ccf800f8e1784ada***
 # Telemetry.CredentialProviders
 
 ## Telemetry.CredentialProviders.A
@@ -384,7 +384,7 @@
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Authentication\PLAP Provider*`的注册表进行`创建、写入`操作
 - 对路径为`*\Software\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 495c7c42f579fcc2a45efdd8c22bcee72c3bd88964ebf0c1714c7c7c4c32062d***
+***rule.json hash: 238b5043dfaecb9d08883698d3b66cffc5214e8381f9460cfa191963efbfb628***
 # Telemetry.LSAConfig
 
 ## Telemetry.LSAConfig.A
@@ -395,7 +395,7 @@
 - 对路径为`*\Control\Lsa`的注册表进行`创建、写入`操作
 - 对路径为`*\Control\Lsa*`的注册表进行`创建、写入`操作
   
-***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***
+***rule.json hash: 1e2d9f278a99ba6eba9d9c27f5ea5ab9a386228c74964f0290559a1256166d9d***
 # Telemetry.PowerShell
 
 ## Telemetry.PowerShell.A
@@ -419,7 +419,7 @@
 行为描述：源程序`*\powershell.exe`做出以下操作时，提示用户处理
 - 对路径为`\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ExecutionPolicy`的注册表进行`写入`操作
   
-***rule.json hash: 6176d464860dad2aa05aac6d1bdd4d556618cc1fa09a68bc9aba16208d464613***
+***rule.json hash: 29f6108776c83ada5ba0762361814e853353ce651363a49dbbd469df11219859***
 # Telemetry.ReadBrowserData
 
 ## Telemetry.ReadBrowserData.A
@@ -430,7 +430,7 @@
 - 对路径为`*\Users\*\AppData\Local\*\User Data\Default\*`的文件进行`读取`操作
 - 对路径为`*\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*`的文件进行`读取`操作
   
-***rule.json hash: 04c8f6e13bbfc0027141f86bf678a2573bfd46326051c1753b2930bfdc2d1d7a***
+***rule.json hash: 4d1a67a222e18c1250786e431e7c774fe73a254ee6de8d5e12b893eb310bd32b***
 # Telemetry.RunFromSusPath
 
 ## Telemetry.RunFromSusPath.A
@@ -440,7 +440,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.exe`的程序进行`执行`操作
   
-***rule.json hash: 8e649f1c95f70ea514564927537534ec4e4d61a9dc322d163fff85aab12fd612***
+***rule.json hash: 8b5b19e3835453960e36607f095ce6353fa52bd88044083277e2627f7174209a***
 # Telemetry.TerminalServer
 
 ## Telemetry.TerminalServer.A
@@ -450,10 +450,10 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\InitialProgram`的注册表进行`写入`操作
   
-***rule.json hash: 1b245341cbd4dc6c3457fef43ee9ab8ffc96738ea578ed2bda9981f86819490e***
+***rule.json hash: b8410efc74805550bfd35e4030951b048c8cc9d8af0698e999d36cfe5425d2a4***
 # Template
   
-***rule.json hash: 26c5a555c2ccb94877985ee87cda3a1f44578de3e71abb672b5b822639f95416***
+***rule.json hash: e499200d7c7647a852931381fcdc2a5b0dd532c593f4a44e58417f77f8f0b617***
 # Trojan.CmstpDownloader
 
 ## Trojan.CmstpDownloader.A
@@ -464,7 +464,7 @@
 - 对路径为`*.exe`的文件进行`创建`操作
 - 对路径为`*.dll`的文件进行`创建`操作
   
-***rule.json hash: 7a61cc7f5c4d7b6726f51cfc9110e44425f219f4b2165f38c3c959691bce9627***
+***rule.json hash: 11ed30aa824e9ec8efb789c6cf1b0bc5d30030f3732b5b11e6663bb8ee92bf42***
 # Trojan.FakeSysProc
 
 ## Trojan.FakeSysProc.A
@@ -479,7 +479,7 @@
 - 对路径为`*\csrss.exe`的程序进行`执行`操作
 - 对路径为`*\smss.exe`的程序进行`执行`操作
   
-***rule.json hash: 050c9912a384d8858c1f745894d9172ff45ef8a04c03a3fa7b57f02c8a0634da***
+***rule.json hash: 5d9ecb177de9dbf727527545e505b234f0b67bd84ba9626eccbfb5e5167e7a0a***
 # Trojan.MshtaDownloader
 
 ## Trojan.MshtaDownloader.A
@@ -492,7 +492,7 @@
 - 对路径为`*.dll`的文件进行`创建`操作
 - 对路径为`*\Users\*\AppData\*`的程序进行`执行`操作
   
-***rule.json hash: 9af5a10aba8688c0759a59db43479ddd32558715cf3b6905531d9ef484e924a7***
+***rule.json hash: 892d5b0994e53705cef82d97b0724d4c867cd9b36181fdb896a680319342e388***
 # Trojan.Nanocore
 
 ## Trojan.Nanocore.A
@@ -502,7 +502,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\run.dat`的文件进行`创建`操作
   
-***rule.json hash: dfee1a531ec4660d2f369489bf185f6d24a448670867d2e1d2f62ff86d4aefd3***
+***rule.json hash: 7b2e1d410b22e9086de4bfa8882b43796c60fbe5efb2bd8af010d7fafd0893ca***
 # Trojan.NetStealer
 
 ## Trojan.NetStealer.A
@@ -523,7 +523,7 @@
 行为描述：源程序`*\Windows\>`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.ini`的文件进行`创建`操作
   
-***rule.json hash: a1dc27a7fe9ba237485ee9bff7e5d1a72d413649aaf9cd82a43b5819c1ff1468***
+***rule.json hash: 5454ed890ae1d2bf443eeabd5100e1df7a4fb650d290265e5879bb4eba62bbad***
 # Trojan.Remcos
 
 ## Trojan.Remcos.A
@@ -533,7 +533,7 @@
 行为描述：源程序`*`做出以下操作时，提示用户处理
 - 对路径为`*Remcos*`的注册表进行`创建、写入`操作
   
-***rule.json hash: 9356fc082479626e97c5c8a06fec3876eb7860531d87b548b6a0897598921edb***
+***rule.json hash: f0d47e95129efb91fd8909c6b9cf4dcedeb0105a461f646d1e1878f4413b59f2***
 # Trojan.Spy
 
 ## Trojan.Spy.A
@@ -549,7 +549,7 @@
 - 对路径为`*\Users\*\AppData\Local\Temp\*passowrd*txt`的文件进行`读取`操作
 - 对路径为`*\Users\*\AppData\Roaming\>\>.jpeg`的文件进行`创建`操作
   
-***rule.json hash: 007f1ee31843571162c95ca83eb42cbc192ccdfe1268363c1a4cd4c96955b914***
+***rule.json hash: 710be4af7b3f126da4f46688eb30715dc581c9cb4416124b73b0475acb7feb83***
 # Trojan.StartupFolderMalDropper
 
 ## Trojan.StartupFolderMalDropper.A
@@ -561,4 +561,4 @@
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.vb?`的文件进行`创建、写入`操作
 - 对路径为`*\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.exe`的文件进行`创建、写入`操作
   
-***rule.json hash: d5498c78b6062c8e4a7376af6eb2cd2e5455102de2d1a404c65b6c8493f72ea0***
+***rule.json hash: 08785f08a7b5db2ca1868486ad734c2bad1e7158a9e5047480a1e397af621d0f***

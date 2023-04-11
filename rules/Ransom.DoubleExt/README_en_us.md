@@ -38,4 +38,4 @@ When the source process`*`initializes the following actions, HIPS module should 
 - `Create` the file under the path `>\Users\>\Desktop\*.jpg.>`
 - `Create` the file under the path `>\Users\>\Desktop\*.png.>`
   
-***rule.json hash: 8afaf4ee0e8ea6328dd7102d76abcd442db651f497c2208e1e9e54e72bad7c4c***
+***rule.json hash: e5f5fd0249fcb5415f8445a356cf9b8d1b081981b6bbe3ce8d4e7b3052fd799a***
