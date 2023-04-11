@@ -2,7 +2,7 @@
 # @Author: JerryLinLinLin
 # @Date:   2022-06-17 16:46:42
 # @Last Modified by:   JerryLinLinLin
-# @Last Modified time: 2023-04-10 21:59:40
+# @Last Modified time: 2023-04-10 22:04:03
 
 import argparse
 import hashlib
@@ -200,7 +200,7 @@ def readme_zh_tw(rule_set_path: str, rule_dict: dict, mdFile: MdUtils):
         policy_list = list()
         for each_action in each_rule["policies"]:
             policy_list.append("對路徑為`{action_path}`的{type}進行`{action}`操作".format(action_path=each_action["res_path"], type=get_montype_string_zh_cn(
-                each_action["montype"]), action=get_action_type_string_zh_cn(each_action["action_type"])))
+                each_action["montype"]), action=get_action_type_string_zh_tw(each_action["action_type"])))
         mdFile.new_list(policy_list)
 
     mdFile.new_line(text="rule.json hash: {_sha256}".format(
