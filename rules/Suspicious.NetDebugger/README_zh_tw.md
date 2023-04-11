@@ -18,6 +18,6 @@
 狀態：啟用
 
 行為描述：源程式`*`做出以下操作時，提示使用者處理
-- 對路徑為`*\SOFTWARE*Microsoft\.NETFramework\DbgManagedDebugge*`的注册表進行`创建、写入`操作
+- 對路徑為`*\SOFTWARE*Microsoft\.NETFramework\DbgManagedDebugge*`的注册表進行`建立、寫入`操作
   
-***rule.json hash: 8dafeaa565c7c02bff7bc9dd9a27155f95ad5958d3259a576797ea797fafb0c8***
+***rule.json hash: 69a78ae8fed5bc9bcbb68eae9c549fcf9ac68e5aaeb26a2a0639866dbaf5d8d6***

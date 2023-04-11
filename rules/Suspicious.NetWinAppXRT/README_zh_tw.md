@@ -18,6 +18,6 @@
 狀態：啟用
 
 行為描述：源程式`*`做出以下操作時，提示使用者處理
-- 對路徑為`*\WinAppXRT.dll`的文件進行`创建、写入`操作
+- 對路徑為`*\WinAppXRT.dll`的文件進行`建立、寫入`操作
   
-***rule.json hash: 854d05545961e7d83d1f1d74614dae0589255c0542306eb3f4716647665ab8aa***
+***rule.json hash: f4ad1d9a4fc9506d43c0e802b323c39414a8599d5241095efeba91abffb9d1ea***

@@ -18,6 +18,6 @@
 狀態：啟用
 
 行為描述：源程式`*`做出以下操作時，提示使用者處理
-- 對路徑為`*\Users\*\AppData\Roaming\>\run.dat`的文件進行`创建`操作
+- 對路徑為`*\Users\*\AppData\Roaming\>\run.dat`的文件進行`建立`操作
   
-***rule.json hash: 7b2e1d410b22e9086de4bfa8882b43796c60fbe5efb2bd8af010d7fafd0893ca***
+***rule.json hash: dfee1a531ec4660d2f369489bf185f6d24a448670867d2e1d2f62ff86d4aefd3***

@@ -32,4 +32,4 @@
 行为描述：源程序`*\Windows\>`做出以下操作时，提示用户处理
 - 对路径为`*\Users\*\AppData\Roaming\>\>.ini`的文件进行`创建`操作
   
-***rule.json hash: 5454ed890ae1d2bf443eeabd5100e1df7a4fb650d290265e5879bb4eba62bbad***
+***rule.json hash: a1dc27a7fe9ba237485ee9bff7e5d1a72d413649aaf9cd82a43b5819c1ff1468***

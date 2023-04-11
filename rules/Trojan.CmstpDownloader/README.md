@@ -21,4 +21,4 @@
 - 对路径为`*.exe`的文件进行`创建`操作
 - 对路径为`*.dll`的文件进行`创建`操作
   
-***rule.json hash: 11ed30aa824e9ec8efb789c6cf1b0bc5d30030f3732b5b11e6663bb8ee92bf42***
+***rule.json hash: 7a61cc7f5c4d7b6726f51cfc9110e44425f219f4b2165f38c3c959691bce9627***

@@ -18,7 +18,7 @@
 狀態：未啟用
 
 行為描述：源程式`*`做出以下操作時，提示使用者處理
-- 對路徑為`*\Control\Lsa`的注册表進行`创建、写入`操作
-- 對路徑為`*\Control\Lsa*`的注册表進行`创建、写入`操作
+- 對路徑為`*\Control\Lsa`的注册表進行`建立、寫入`操作
+- 對路徑為`*\Control\Lsa*`的注册表進行`建立、寫入`操作
   
-***rule.json hash: 1e2d9f278a99ba6eba9d9c27f5ea5ab9a386228c74964f0290559a1256166d9d***
+***rule.json hash: f94511a7d03f0b57a291761d410b84c4f5376efd0bb7fe56ba9e06d3ebe09bf7***

@@ -24,4 +24,4 @@
 - 对路径为`>\Users\*\AppData\>.txt`的文件进行`创建`操作
 - 对路径为`>\Program Files\>.txt`的文件进行`创建`操作
   
-***rule.json hash: c2c8db5cd47d81f8a5f0d961cc8c86cd9bf327106b678a8370b38d6e50963444***
+***rule.json hash: 92dea9dc04af20406512baf6d17bf9ffc4c27911257403682db3b4bccd2b9bf3***
