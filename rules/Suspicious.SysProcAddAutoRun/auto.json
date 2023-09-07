@@ -25,6 +25,14 @@
                 "action_type": 5,
                 "treatment": 0
             }
+        ],
+        "*\\Windows\\Sys?????\\reg.exe": [
+            {
+                "res_path": "*\\Software\\Microsoft\\Windows\\CurrentVersion\\Run*",
+                "montype": 2,
+                "action_type": 5,
+                "treatment": 0
+            }
         ]
     }
 }
