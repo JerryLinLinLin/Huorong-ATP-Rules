@@ -4,11 +4,13 @@
 
 <div align="center"/>
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls) [![License](https://img.shields.io/github/license/JerryLinLinLin/Huorong-ATP-Rules)](/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/Colinxu2020/Huorong-ATP-Rules)](https://github.com/Colinxu2020/Huorong-ATP-Rules/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Colinxu2020/Huorong-ATP-Rules)](https://github.com/Colinxu2020/Huorong-ATP-Rules/pulls) [![License](https://img.shields.io/github/license/Colinxu2020/Huorong-ATP-Rules)](/LICENSE)
 
 </div>
 
 Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™](https://attack.mitre.org/) and malware behavioral characteristics. It can detect, block and intercept all kinds of malware, [Advanced Persistent Threat (APT)](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81) attack vectors and attack paths, such as fileless attacks, exploit attacks, crypto-ransomware, etc. It is also highly scalable, maintainable and community developer friendly.
+
+Please give me a Star⭐ if this helps you, thanks!
 
 - [Installation/Import Rules](#installimport-rules)
 - [Getting Started](#getting-started)
@@ -20,7 +22,7 @@ Huorong Advanced Threat Protection Rules are written based on [MITRE ATT\&CK™]
 
 ## Install/Import Rules
 
-Download the [latest rule version](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest), unzip the file to get `Rule.json`, `Auto.json`. Open the main interface of Huorong -> Protection Center -> Advanced Protection -> Custom Rules, click the switch to enable, click the item -> Enter the advanced protection settings, in the custom rule settings interface -> Import -> Select `Rule.json` and in the Automatic processing settings interface -> Import -> Select `Auto.json`.
+Download the [latest rule version](https://github.com/Colinxu2020/Huorong-ATP-Rules/releases/latest), unzip the file to get `Rule.json`, `Auto.json`. Open the main interface of Huorong -> Protection Center -> Advanced Protection -> Custom Rules, click the switch to enable, click the item -> Enter the advanced protection settings, in the custom rule settings interface -> Import -> Select `Rule.json` and in the Automatic processing settings interface -> Import -> Select `Auto.json`.
 
 Please manually delete the old rules and re-import them when you update to a new version.
 
@@ -60,7 +62,7 @@ The directory structure is as follows
 
 Located in the `scripts/` directory, it is used to automatically check the rule file format, export/merge all rule groups, generate rule description documents, etc. and is limited to this rule directory structure.
 
-- `validate_rules.py` - Validation rules file, based on this [schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema)
+- `validate_rules.py` - Validation rules file, based on this [schema](https://github.com/Colinxu2020/Huorong-HIPS-Rule-Schema)
 
 <!---->
 
@@ -93,10 +95,13 @@ Located in the `scripts/` directory, it is used to automatically check the rule 
 
 ## Changelog
 
-See the [release log](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest) for details
+See the [release log](https://github.com/Colinxu2020/Huorong-ATP-Rules/releases/latest) for details
 
 TO-DO: Add changelog.md
 
 ## Feedback/Contribution
+
+Do not report issues about 0.1.x versions, those versions are maintanced by @JerryLinLinLin but not me and no longer receive update.
+Do not report issues about 0.2.x versions to @JerryLinLin, those versions are maintanced by me.
 
 Make sure you read the [contributing guidelines](/CONTRIBUTING.md) before opening Issues or PR.

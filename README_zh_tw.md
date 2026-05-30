@@ -5,13 +5,15 @@
 <div align="center">
   
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/JerryLinLinLin/Huorong-ATP-Rules)](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/pulls)
-[![License](https://img.shields.io/github/license/JerryLinLinLin/Huorong-ATP-Rules)](/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/Colinxu2020/Huorong-ATP-Rules)](https://github.com/Colinxu2020/Huorong-ATP-Rules/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Colinxu2020/Huorong-ATP-Rules)](https://github.com/Colinxu2020/Huorong-ATP-Rules/pulls)
+[![License](https://img.shields.io/github/license/Colinxu2020/Huorong-ATP-Rules)](/LICENSE)
 
 </div>
 
 基於 [MITRE ATT&CK™](https://attack.mitre.org/) 和惡意軟體行為特徵編寫而成的火絨自定義防護規則，能夠檢測，阻止，攔截各類惡意軟體，[高階持續性威脅（APT）](https://zh.m.wikipedia.org/zh-hans/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81)的攻擊載體和攻擊途徑，典型的如無檔案攻擊，漏洞攻擊，加密勒索等。同時具有較高的可擴充套件性和可維護性，對社群開發者友好。
+
+如果這對你有幫助，請給我一個 Star⭐，謝謝。
 
 - [安裝/匯入規則](#安裝匯入規則)
 - [新手上路](#新手上路)
@@ -23,7 +25,7 @@
 
 ## 安裝/匯入規則
 
-下載[最新規則版本](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)，解壓檔案可得`Rule.json`, `Auto.json`。開啟火絨主介面->防護中心->高階防護->自定義規則，點選開關啟用，點選專案->進入高階防護設定項，在自定義規則設定介面->匯入->選擇`Rule.json`，在自動處理設定頁面->匯入->選擇`Auto.json`。
+下載[最新規則版本](https://github.com/Colinxu2020/Huorong-ATP-Rules/releases/latest)，解壓檔案可得`Rule.json`, `Auto.json`。開啟火絨主介面->防護中心->高階防護->自定義規則，點選開關啟用，點選專案->進入高階防護設定項，在自定義規則設定介面->匯入->選擇`Rule.json`，在自動處理設定頁面->匯入->選擇`Auto.json`。
 
 版本更新時請手動刪除舊規則然後重新匯入。
 
@@ -65,7 +67,7 @@
 
 位於`scripts/`目錄下，用於自動檢查規則檔案格式、匯出/合併所有規則組，生成規則說明文件等，僅限於此規則目錄結構。
 
-- `validate_rules.py` - 驗證規則檔案，基於此[schema](https://github.com/JerryLinLinLin/Huorong-HIPS-Rule-Schema)
+- `validate_rules.py` - 驗證規則檔案，基於此[schema](https://github.com/Colinxu2020/Huorong-HIPS-Rule-Schema)
 
 ```
 usage: validate_rules.py [-h] --path PATH
@@ -98,10 +100,13 @@ optional arguments:
 
 ## 更新日誌
 
-詳見每次[釋出日誌](https://github.com/JerryLinLinLin/Huorong-ATP-Rules/releases/latest)
+詳見每次[釋出日誌](https://github.com/Colinxu2020/Huorong-ATP-Rules/releases/latest)
 
 TO-DO: Add changelog.md
 
 ## 反饋/貢獻
+
+請不要在此反饋 v0.1.x 版本的問題，該版本由 @JerryLinLinLin 維護，且已不再更新。
+請不要將 v0.2.x 版本的問題反饋到 @JerryLinLinLin 的倉庫，這些版本由我維護更新。
 
 在開Issues或者PR前，請確保閱讀[contributing guidelines](/CONTRIBUTING.md)。

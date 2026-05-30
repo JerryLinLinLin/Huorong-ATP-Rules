@@ -339,7 +339,7 @@ When the source process`*\Windows\Sys?????\>`initializes the following actions, 
 
 ## Suspicious.ScriptHost.A
   
-Status: Enabled
+Status: Disabled
 
 Behavioral Description:   
 When the source process`*\?script.exe`initializes the following actions, HIPS module should let the user decide them.
@@ -350,13 +350,13 @@ When the source process`*\?script.exe`initializes the following actions, HIPS mo
 
 ## Suspicious.ScriptHost.B
   
-Status: Enabled
+Status: Disabled
 
 Behavioral Description:   
 When the source process`*\Windows\Sys?????\*.exe`initializes the following actions, HIPS module should let the user decide them.
 - `Execute` the program under the path `*\?script.exe`
   
-***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***
+***rule.json hash: 061537b93cbecde04566066386b7a4b439858368c67b85da717ca23251fd4d14***
 # Suspicious.SuspProcAddAutoRun
 
 ## Suspicious.SuspProcAddAutoRun.A

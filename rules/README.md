@@ -316,7 +316,7 @@
 
 ## Suspicious.ScriptHost.A
   
-状态：启用
+状态：未启用
 
 行为描述：源程序`*\?script.exe`做出以下操作时，提示用户处理
 - 对路径为`*\Windows\Sys?????\*.exe`的程序进行`执行`操作
@@ -326,12 +326,12 @@
 
 ## Suspicious.ScriptHost.B
   
-状态：启用
+状态：未启用
 
 行为描述：源程序`*\Windows\Sys?????\*.exe`做出以下操作时，提示用户处理
 - 对路径为`*\?script.exe`的程序进行`执行`操作
   
-***rule.json hash: 7692734f67bdef45c360f5d4b04da6d64141543e16f47214a7b005f3094a3fe9***
+***rule.json hash: 061537b93cbecde04566066386b7a4b439858368c67b85da717ca23251fd4d14***
 # Suspicious.SuspProcAddAutoRun
 
 ## Suspicious.SuspProcAddAutoRun.A

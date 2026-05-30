@@ -37,6 +37,16 @@
                 "action_type": 16,
                 "treatment": 0
             }
+        ],
+        "*\\Windows\\system32\\svchost.exe": [
+            {
+                "res_path": "*\\ProgramData\\MEGAsync\\MEGAupdater.exe",
+                "montype": 0,
+                "action_type": 16,
+                "treatment": 0,
+                "cmdline": "*\\Windows\\system32\\svchost.exe -k netsvcs -p -s Schedule",
+                "p_procname": "*\\Windows\\System32\\services.exe"
+            }
         ]
     }
 }

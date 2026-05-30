@@ -4,7 +4,7 @@
   "data": [
     {
       "id": 240,
-      "power": 1,
+      "power": 0,
       "name": "Suspicious.ScriptHost.A",
       "procname": "*\\?script.exe",
       "treatment": 1,
@@ -33,7 +33,7 @@
     },
     {
       "id": 240,
-      "power": 1,
+      "power": 0,
       "name": "Suspicious.ScriptHost.B",
       "procname": "*\\Windows\\Sys?????\\*.exe",
       "treatment": 1,
